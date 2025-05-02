@@ -1,5 +1,12 @@
 import React from "react";
+import imgPrincipal from "../assets/images/INICIO-EST.jpeg";
 
 export default function Principal() {
-  return <div>Inicio</div>;
+  return (
+    <div>
+      <div>
+        <img src={imgPrincipal} alt="imagen principal" />
+      </div>
+    </div>
+  );
 }
