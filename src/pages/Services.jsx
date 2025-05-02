@@ -1,11 +1,11 @@
 import React from "react";
-import Principal from "../components/Principal";
 import Layout from "../layouts/Layout";
+import Servicios from "../components/Servicios";
 
-export default function Inicio() {
+export default function Services() {
   return (
     <Layout>
-      <Principal />
+      <Servicios />
     </Layout>
   );
 }

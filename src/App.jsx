@@ -1,8 +1,13 @@
 import { useState } from "react";
+import Inicio from "./pages/Inicio";
 import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Inicio />
+    </>
+  );
 }
 
 export default App;
