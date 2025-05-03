@@ -6,7 +6,7 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import LOGOHEADER from "../assets/images/LOGOHEADER.png";
+import LOGOHEADER from "../assets/images/frente.jpg";
 
 export default function Header() {
   return (
@@ -43,9 +43,9 @@ export default function Header() {
           <a
             className="navbar-brand me-3"
             href="/"
-            style={{ marginLeft: "-30px" }}
+            style={{ marginLeft: "-50px" }}
           >
-            <img src={LOGOHEADER} alt="Logo" height="100" />
+            <img src={LOGOHEADER} alt="Logo" height="110" />
           </a>
           <button
             className="navbar-toggler"
