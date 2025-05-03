@@ -67,3 +67,53 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.bg-dark-custom {
+  background-color: #262783 !important;
+  color: white;
+}
+
+
+.topbar a {
+  color: #ffffff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navbar-white {
+  background-color: #ffffff;
+}
+
+.navbar-white .nav-link {
+  color: #333333 !important;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #0056b3 !important;
+  border-bottom: 2px solid #0056b3;
+}
+
+.contact-info span {
+  font-size: 0.95rem;
+  color: #f1f1f1;
+  padding: 14px 8px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.contact-info span:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
