@@ -15,18 +15,19 @@ export default function Header() {
         <div className="container d-flex justify-content-between align-items-center flex-wrap">
           <div className="d-flex align-items-center flex-wrap gap-5 contact-info">
             <span>
-              <FaEnvelope className="me-1" /> seguros@example.com
+              <FaEnvelope className="me-1" /> segurospineda@hotmail.com
             </span>
             <span>
-              <FaPhone className="me-1" /> (123) 456-7890
+              <FaPhone className="me-1" /> (221) 425-0325
             </span>
             <span>
-              <FaMapMarkerAlt className="me-1" /> Calle Falsa 123
+              <FaMapMarkerAlt className="me-1" /> Calle 11 esquina 32 Nº3, La
+              Plata
             </span>
           </div>
           <div>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/segurospineda"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -91,7 +92,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                 >
                   <FaWhatsapp color="#25D366" size={22} className="me-2" />
-                  (123) 456-7890
+                  (221) 5704647
                 </a>
               </li>
             </ul>
