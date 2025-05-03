@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white text-center py-3">
+    <footer className="bg-dark-custom text-white text-center py-2">
       <div className="container">
         <p className="mb-0">
-          © 2025 Seguros XYZ - Todos los derechos reservados
+          © 2025 Seguros PINEDA - Todos los derechos reservados
         </p>
         <p className="mb-0">
           <a href="/privacidad" className="text-white">
