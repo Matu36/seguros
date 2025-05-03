@@ -4,7 +4,7 @@ import nosotros from "../assets/images/nosotros.png";
 
 export default function Principal() {
   return (
-    <div className="container-fluid p-2">
+    <div className="container-fluid p-0">
       {/* Imagen principal */}
       <img
         src={imgPrincipal}

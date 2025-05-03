@@ -76,7 +76,7 @@ button:focus-visible {
 
 .topbar a {
   color: #ffffff;
-  /* margin-right: 1rem; */
+
   text-decoration: none;
 }
 
@@ -103,10 +103,11 @@ button:focus-visible {
   border-bottom: 2px solid #0056b3;
 }
 
+
 .contact-info span {
   font-size: 0.95rem;
   color: #f1f1f1;
-  padding: 4px 8px;
+  padding: 2px 2px;
   border-radius: 4px;
   transition: background 0.3s ease;
 }

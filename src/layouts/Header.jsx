@@ -6,23 +6,33 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import LOGOHEADER from "../assets/images/frente.jpg";
+import LOGOHEADER from "../assets/images/frenteachicado.png";
+import LOGO6 from "../assets/images/6.png";
 
 export default function Header() {
   return (
     <>
-      <div className="bg-dark-custom py-2 topbar">
+      <div className="bg-dark-custom py-1 topbar">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center flex-wrap gap-2 contact-info">
-            <span className="fw-bold">
-              <FaEnvelope className="me-1" /> segurospineda@hotmail.com
-            </span>
-            <span className="fw-bold">
-              <FaPhone className="me-1" /> (221) 425-0325
-            </span>
-            <span className="fw-bold">
+            <span
+              className="fw-bold text-white"
+              style={{ letterSpacing: "1px", marginRight: "1rem" }}
+            >
               <FaMapMarkerAlt className="me-1" /> Calle 11 esquina 32 Nº3, La
               Plata
+            </span>
+            <span
+              className="fw-bold text-white"
+              style={{ letterSpacing: "1px", marginRight: "1rem" }}
+            >
+              <FaEnvelope className="me-1" /> segurospineda@hotmail.com
+            </span>
+            <span
+              className="fw-bold text-white"
+              style={{ letterSpacing: "1px" }}
+            >
+              <FaPhone className="me-1" /> (221) 425-0325
             </span>
           </div>
           <div>
