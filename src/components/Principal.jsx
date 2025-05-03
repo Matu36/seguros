@@ -41,13 +41,16 @@ export default function Principal() {
         </div>
 
         {/* Imagen derecha */}
-        <div className="col-md-6 p-0 h-100 p-2">
+        <div className="position-relative col-md-6 p-0 h-100 p-2">
           <img
             src={nosotros}
             alt="Acerca de la compañía"
             className="w-100 h-100"
             style={{ objectFit: "cover" }}
           />
+          <a href="/aboutUs" className="overlay">
+            <div className="overlay-content">Ver más</div>
+          </a>
         </div>
       </div>
     </div>
