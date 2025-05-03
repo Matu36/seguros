@@ -12,8 +12,8 @@ export default function Header() {
   return (
     <>
       <div className="bg-dark-custom py-2 topbar">
-        <div className="container d-flex justify-content-between align-items-center flex-wrap">
-          <div className="d-flex align-items-center flex-wrap gap-5 contact-info">
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="d-flex align-items-center flex-wrap gap-2 contact-info">
             <span className="fw-bold">
               <FaEnvelope className="me-1" /> segurospineda@hotmail.com
             </span>
