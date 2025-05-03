@@ -3,7 +3,6 @@ import Principal from "./Principal";
 import Novedades from "../components/Novedades";
 import Servicios from "../components/Servicios";
 import Nosotros from "../components/Nosotros";
-import Contacto from "../components/Contacto";
 
 export default function Todos() {
   return (
@@ -12,7 +11,6 @@ export default function Todos() {
       <Novedades />
       <Servicios />
       <Nosotros />
-      <Contacto />
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Contacto() {
         <div className="col-md-6 d-flex align-items-center">
           <div className="p-2 w-100">
             <div className="mb-4">
-              <h4 className="mb-2 fs-5 text-uppercase text-secondary">
+              <h4 className="mb-1 fs-5 text-uppercase text-secondary">
                 CONTACTO
               </h4>
 

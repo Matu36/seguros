@@ -14,13 +14,13 @@ export default function Header() {
       <div className="bg-dark-custom py-2 topbar">
         <div className="container d-flex justify-content-between align-items-center flex-wrap">
           <div className="d-flex align-items-center flex-wrap gap-5 contact-info">
-            <span>
+            <span className="fw-bold">
               <FaEnvelope className="me-1" /> segurospineda@hotmail.com
             </span>
-            <span>
+            <span className="fw-bold">
               <FaPhone className="me-1" /> (221) 425-0325
             </span>
-            <span>
+            <span className="fw-bold">
               <FaMapMarkerAlt className="me-1" /> Calle 11 esquina 32 Nº3, La
               Plata
             </span>
@@ -40,7 +40,11 @@ export default function Header() {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-white">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <a
+            className="navbar-brand me-3"
+            href="/"
+            style={{ marginLeft: "-30px" }}
+          >
             <img src={LOGOHEADER} alt="Logo" height="100" />
           </a>
           <button

@@ -76,7 +76,7 @@ button:focus-visible {
 
 .topbar a {
   color: #ffffff;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   text-decoration: none;
 }
 
