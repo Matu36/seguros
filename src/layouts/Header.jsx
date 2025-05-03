@@ -7,7 +7,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import LOGOHEADER from "../assets/images/frenteachicado.png";
-import LOGO6 from "../assets/images/6.png";
+import Sidebar from "../layouts/Sidebar";
 
 export default function Header() {
   return (
@@ -50,23 +50,18 @@ export default function Header() {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-white">
         <div className="container">
-          <a
-            className="navbar-brand me-3"
-            href="/"
-            style={{ marginLeft: "-50px" }}
-          >
+          <a className="navbar-brand me-3" href="/">
             <img src={LOGOHEADER} alt="Logo" height="110" />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+
+          {/* Botón Hamburguesa solo visible en mobile */}
+          <div className="d-lg-none ms-auto">
+            <Sidebar />
+          </div>
+
+          {/* Navbar visible solo en pantallas grandes */}
           <div
-            className="collapse navbar-collapse justify-content-center"
+            className="collapse navbar-collapse justify-content-center d-none d-lg-flex"
             id="navbarNav"
           >
             <ul className="navbar-nav custom-navbar mx-auto">

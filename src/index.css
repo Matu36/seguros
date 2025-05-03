@@ -69,14 +69,20 @@ button:focus-visible {
 }
 
 .bg-dark-custom {
-  background-color: #262783 !important;
+  background-color: #6d6eaf !important;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
+
 
 
 .topbar a {
   color: #ffffff;
-
   text-decoration: none;
 }
 
@@ -142,4 +148,31 @@ button:focus-visible {
 }
 
 
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  display: block;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0; 
+}
+
+
+.sidebar-link:hover {
+  color: #003366; 
+}
+
+
+.logo-sidebar {
+  width: 40%;
+  opacity: 0.9;
+  margin-top: 3rem;
+}
+
+.logosidebarcontainer {
+  display: flex;
+  justify-content: center;
+}
 
