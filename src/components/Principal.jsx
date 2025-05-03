@@ -4,7 +4,7 @@ import nosotros from "../assets/images/nosotros.png";
 
 export default function Principal() {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-2">
       {/* Imagen principal */}
       <img
         src={imgPrincipal}
@@ -12,10 +12,9 @@ export default function Principal() {
         className="img-fluid w-100"
       />
 
-      {/* Sección Acerca de la Compañía */}
-      <div className="row min-vh-100">
+      <div className="row min-vh-100 align-items-center mt-2">
         {/* Texto izquierda */}
-        <div className="col-md-6 d-flex align-items-center bg-light p-5">
+        <div className="col-md-6 d-flex justify-content-center bg-light p-5">
           <div>
             <h4
               className="text-uppercase text-secondary mb-2"
@@ -42,7 +41,7 @@ export default function Principal() {
         </div>
 
         {/* Imagen derecha */}
-        <div className="col-md-6 p-0">
+        <div className="col-md-6 p-0 h-100 p-2">
           <img
             src={nosotros}
             alt="Acerca de la compañía"

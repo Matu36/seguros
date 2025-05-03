@@ -11,7 +11,9 @@ export default function Layout({ children }) {
     <div className="d-flex flex-column min-vh-100">
       <Header />
       <main className="flex-grow-1 px-0">{children}</main>
-      {location.pathname !== "/contacto" && <Contacto />}
+      <div className="mt-4 mb-4">
+        {location.pathname !== "/contacto" && <Contacto />}
+      </div>
       <Footer />
     </div>
   );
