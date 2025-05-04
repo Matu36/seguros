@@ -147,7 +147,7 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaWhatsapp color="#25D366" size={22} className="me-2" />
+                  <FaWhatsapp color="#25D366" size={28} className="me-2" />
                   (221) 5704647
                 </a>
               </li>

@@ -6,7 +6,7 @@ export default function Contacto() {
     <div className="container-fluid">
       <div className="row min-vh-100">
         {/* Imagen lado izquierdo */}
-        <div className="col-md-6 p-1">
+        <div className="col-md-6 p-2">
           <img
             src={ContactoImg}
             alt="Contacto"
@@ -19,15 +19,15 @@ export default function Contacto() {
         <div className="col-md-6 d-flex align-items-center">
           <div className="p-2 w-100">
             <div className="mb-4">
-              <h4 className="mb-1 fs-5 text-uppercase text-secondary">
+              <h4 className="mb-0 fs-5 text-uppercase text-secondary">
                 CONTACTO
               </h4>
 
-              <p className="mb-1 fs-2 fw-bold color-blue">
+              <p className="mb-0 fs-2 fw-bold color-blue">
                 Comunicate con nosotros
               </p>
 
-              <p className="mt-3 fw-semibold text-dark">
+              <p className="mt-2 fw-semibold text-dark">
                 Contactate con nosotros por cualquier duda, inquietud, o para{" "}
                 <br />
                 formar parte de nuestra red de productores.
