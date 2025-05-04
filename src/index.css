@@ -79,7 +79,49 @@ button:focus-visible {
   }
 }
 
+.logo-img {
+  height: 110px;
+  transition: height 0.3s ease;
+}
 
+@media (max-width: 470px) {
+  .logo-img {
+    height: 80px;
+  }
+}
+
+.custom-toggler {
+  border: none; 
+  background-color: transparent; 
+  position: relative;
+  top: 2px; 
+  padding: 5px; 
+}
+
+.custom-toggler .navbar-toggler-icon {
+  width: 30px; 
+  height: 2px; 
+  background-color: #000; 
+  position: relative;
+}
+
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px; 
+  height: 2px; 
+  background-color: #000; 
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+  top: -8px; 
+}
+
+.custom-toggler .navbar-toggler-icon::after {
+  top: 8px; 
+}
 
 .topbar a {
   color: #ffffff;

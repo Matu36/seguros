@@ -51,8 +51,66 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-white">
         <div className="container">
           <a className="navbar-brand me-3" href="/">
-            <img src={LOGOHEADER} alt="Logo" height="110" />
+            <img src={LOGOHEADER} alt="Logo" className="logo-img" />
           </a>
+
+          <div className="d-lg-none ms-auto d-flex gap-4 align-items-center">
+            <a
+              href="https://www.google.com/maps?q=Calle+11+esquina+32+Nº3,+La+Plata"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#0d6efd",
+                fontSize: "1.8rem",
+                cursor: "pointer",
+              }}
+            >
+              <FaMapMarkerAlt />
+              <span className="visually-hidden">
+                Calle 11 esquina 32 Nº3, La Plata
+              </span>
+            </a>
+
+            {/* <a
+              href="mailto:segurospineda@hotmail.com"
+              style={{
+                color: "#6c757d", 
+                fontSize: "1.8rem",
+                cursor: "pointer",
+              }}
+            >
+              <FaEnvelope />
+              <span className="visually-hidden">segurospineda@hotmail.com</span>
+            </a> */}
+
+            <a
+              href="https://wa.me/542215704647"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#25D366", // verde WhatsApp
+                fontSize: "1.8rem",
+                cursor: "pointer",
+              }}
+            >
+              <FaWhatsapp />
+              <span className="visually-hidden">221 5704647</span>
+            </a>
+
+            <a
+              href="https://instagram.com/segurospineda"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#E1306C", // rosa Instagram
+                fontSize: "1.8rem",
+                cursor: "pointer",
+              }}
+            >
+              <FaInstagram />
+              <span className="visually-hidden">Instagram</span>
+            </a>
+          </div>
 
           {/* Botón Hamburguesa solo visible en mobile */}
           <div className="d-lg-none ms-auto">

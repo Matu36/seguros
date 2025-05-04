@@ -9,7 +9,7 @@ export default function Sidebar() {
   return (
     <>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler custom-toggler"
         type="button"
         onClick={() => setShow(true)}
       >
