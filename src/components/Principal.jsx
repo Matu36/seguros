@@ -53,14 +53,30 @@ export default function Principal() {
             className="w-100 h-100"
             style={{ objectFit: "cover" }}
           />
-          <a href="/aboutUs" className="overlay">
-            <div className="overlay-content">Ver más</div>
+          <a
+            href="/aboutUs"
+            className="position-absolute bottom-0 end-0 me-4 mb-4 d-inline-flex align-items-center gap-2 px-4 py-2 bg-white text-primary fw-semibold rounded shadow-sm text-decoration-none"
+            style={{ transition: "all 0.3s ease", cursor: "pointer" }}
+            onMouseEnter={(e) => {
+              const icon = e.currentTarget.querySelector(".arrow-icon");
+              icon.style.transform = "translateX(5px)";
+            }}
+            onMouseLeave={(e) => {
+              const icon = e.currentTarget.querySelector(".arrow-icon");
+              icon.style.transform = "translateX(0)";
+            }}
+          >
+            Ver más
+            <FaArrowRight
+              className="arrow-icon"
+              style={{ transition: "transform 0.3s ease" }}
+            />
           </a>
         </div>
       </div>
       <div className="container-fluid mb-4">
         <h4
-          className="text-uppercase text-secondary mb-2 text-center "
+          className="text-uppercase text-secondary text-center"
           style={{ letterSpacing: "1px" }}
         >
           Seguros de Vida y Patrimoniales
@@ -128,6 +144,27 @@ export default function Principal() {
               </div>
             </Link>
           </div>
+        </div>
+        <div className="text-center mt-2">
+          <Link
+            to="/productos"
+            className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white text-primary fw-semibold rounded shadow-sm text-decoration-none"
+            style={{ transition: "all 0.3s ease", cursor: "pointer" }}
+            onMouseEnter={(e) => {
+              const icon = e.currentTarget.querySelector(".arrow-icon");
+              icon.style.transform = "translateX(5px)";
+            }}
+            onMouseLeave={(e) => {
+              const icon = e.currentTarget.querySelector(".arrow-icon");
+              icon.style.transform = "translateX(0)";
+            }}
+          >
+            Ver más
+            <FaArrowRight
+              className="arrow-icon"
+              style={{ transition: "transform 0.3s ease" }}
+            />
+          </Link>
         </div>
       </div>
     </div>
