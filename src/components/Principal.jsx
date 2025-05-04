@@ -77,7 +77,7 @@ export default function Principal() {
           </a>
         </div>
       </div>
-      <div className="container-fluid mb-4">
+      <div className="container-fluid mt-4 mt-md-0 mb-2">
         <h4
           className="text-uppercase text-secondary text-center"
           style={{ letterSpacing: "1px" }}
@@ -90,7 +90,7 @@ export default function Principal() {
           <div className="col-md-4">
             <Link to="/productos" className="text-decoration-none">
               <div
-                className="card bg-dark-blue  text-center text-white border-0 h-100"
+                className="card bg-dark-blue text-center text-white border-0 h-100"
                 style={{ cursor: "pointer" }}
               >
                 <img
