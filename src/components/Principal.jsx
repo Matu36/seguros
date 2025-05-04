@@ -28,7 +28,7 @@ export default function Principal() {
               Acerca de la Compañía
             </h4>
             <h2
-              className="text-primary fw-bold mb-4"
+              className="color-blue fw-bold mb-4"
               style={{ fontSize: "2rem" }}
             >
               Sobre nosotros
@@ -55,7 +55,7 @@ export default function Principal() {
           />
           <a
             href="/aboutUs"
-            className="position-absolute bottom-0 end-0 me-4 mb-4 d-inline-flex align-items-center gap-2 px-4 py-2 bg-white text-primary fw-semibold rounded shadow-sm text-decoration-none"
+            className="position-absolute bottom-0 end-0 me-4 mb-4 d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm text-decoration-none"
             style={{ transition: "all 0.3s ease", cursor: "pointer" }}
             onMouseEnter={(e) => {
               const icon = e.currentTarget.querySelector(".arrow-icon");
@@ -81,13 +81,13 @@ export default function Principal() {
         >
           Seguros de Vida y Patrimoniales
         </h4>
-        <h2 className="text-primary text-center fw-bold">Productos</h2>
+        <h2 className="color-blue text-center fw-bold">Productos</h2>
         <div className="row g-4 m-0">
           {/* Card 1 */}
           <div className="col-md-4">
             <Link to="/productos" className="text-decoration-none">
               <div
-                className="card bg-primary text-center text-white border-0 h-100"
+                className="card bg-dark-blue  text-center text-white border-0 h-100"
                 style={{ cursor: "pointer" }}
               >
                 <img
@@ -109,7 +109,7 @@ export default function Principal() {
           <div className="col-md-4">
             <Link to="/productos" className="text-decoration-none">
               <div
-                className="card bg-primary text-center text-white border-0 h-100"
+                className="card bg-dark-blue  text-center text-white border-0 h-100"
                 style={{ cursor: "pointer" }}
               >
                 <img
@@ -129,7 +129,7 @@ export default function Principal() {
           <div className="col-md-4">
             <Link to="/productos" className="text-decoration-none">
               <div
-                className="card bg-primary text-center text-white border-0 h-100"
+                className="card bg-dark-blue  text-center text-white border-0 h-100"
                 style={{ cursor: "pointer" }}
               >
                 <img
@@ -148,7 +148,7 @@ export default function Principal() {
         <div className="text-center mt-2">
           <Link
             to="/productos"
-            className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white text-primary fw-semibold rounded shadow-sm text-decoration-none"
+            className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm text-decoration-none"
             style={{ transition: "all 0.3s ease", cursor: "pointer" }}
             onMouseEnter={(e) => {
               const icon = e.currentTarget.querySelector(".arrow-icon");

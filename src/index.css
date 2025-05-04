@@ -73,6 +73,14 @@ button:focus-visible {
   color: white;
 }
 
+.bg-dark-blue {
+  background-color: #0056b3 !important;
+}
+
+.color-blue {
+  color:#0056b3 !important; ;
+}
+
 @media (max-width: 768px) {
   .topbar {
     display: none;

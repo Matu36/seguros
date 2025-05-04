@@ -23,7 +23,7 @@ export default function Contacto() {
                 CONTACTO
               </h4>
 
-              <p className="mb-1 fs-2 fw-bold text-primary">
+              <p className="mb-1 fs-2 fw-bold color-blue">
                 Comunicate con nosotros
               </p>
 
