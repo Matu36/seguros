@@ -6,6 +6,9 @@ import casa from "../assets/images/productos/casa/casa.jpg";
 import automotor from "../assets/images/productos/automotor/automotor.jpg";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import videoTR from "../assets/videos/Todo-Riesgo.mp4";
+import videoControl from "../assets/videos/controlar.mp4";
+import videoCelular from "../assets/videos/celular.mp4";
 
 export default function Principal() {
   return (
@@ -145,7 +148,8 @@ export default function Principal() {
             </Link>
           </div>
         </div>
-        <div className="text-center mt-2">
+
+        <div className="text-center mt-2 mb-2">
           <Link
             to="/productos"
             className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm text-decoration-none"
@@ -165,6 +169,123 @@ export default function Principal() {
               style={{ transition: "transform 0.3s ease" }}
             />
           </Link>
+        </div>
+      </div>
+      <div className="container-fluid bg-light py-5 px-md-5 px-4">
+        <h4
+          className="text-uppercase text-secondary text-center"
+          style={{ letterSpacing: "1px" }}
+        >
+          Tendencias del sector asegurador
+        </h4>
+        <h2 className="color-blue text-center fw-bold">Novedades</h2>
+
+        <div className="row g-4 justify-content-center">
+          {/* Card 1 */}
+          <div className="col-lg-4 col-md-6">
+            <div className="card h-100 rounded shadow-sm">
+              <div className="p-2">
+                <div className="ratio ratio-16x9 rounded overflow-hidden">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-100 h-100"
+                  >
+                    <source src={videoTR} type="video/mp4" />
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title color-blue fw-bold text-uppercase">
+                  Todo Riesgo
+                </h5>
+                <p className="card-text text-secondary">
+                  Conocé los beneficios de tener cobertura total para tu
+                  vehículo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="col-lg-4 col-md-6">
+            <div className="card h-100 rounded shadow-sm">
+              <div className="p-2">
+                <div className="ratio ratio-16x9 rounded overflow-hidden">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-100 h-100"
+                  >
+                    <source src={videoControl} type="video/mp4" />
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title color-blue fw-bold text-uppercase">
+                  Antes de Viajar
+                </h5>
+                <p className="card-text text-secondary">
+                  Todo lo que necesitás tener en regla antes de salir a la ruta.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="col-lg-4 col-md-6">
+            <div className="card h-100 rounded shadow-sm">
+              <div className="p-2">
+                <div className="ratio ratio-16x9 rounded overflow-hidden">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-100 h-100"
+                  >
+                    <source src={videoCelular} type="video/mp4" />
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title color-blue fw-bold text-uppercase">
+                  Sin Celular
+                </h5>
+                <p className="card-text text-secondary">
+                  Concientización sobre el uso del celular al volante.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-2">
+            <Link
+              to="/novedades"
+              className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm text-decoration-none"
+              style={{ transition: "all 0.3s ease", cursor: "pointer" }}
+              onMouseEnter={(e) => {
+                const icon = e.currentTarget.querySelector(".arrow-icon");
+                icon.style.transform = "translateX(5px)";
+              }}
+              onMouseLeave={(e) => {
+                const icon = e.currentTarget.querySelector(".arrow-icon");
+                icon.style.transform = "translateX(0)";
+              }}
+            >
+              Ver más
+              <FaArrowRight
+                className="arrow-icon"
+                style={{ transition: "transform 0.3s ease" }}
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
