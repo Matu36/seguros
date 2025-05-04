@@ -13,7 +13,7 @@ export default function AppRouter() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/novedades" element={<News />} />
         <Route path="/contacto" element={<Contact />} />
-        <Route path="/servicios" element={<Services />} />
+        <Route path="/productos" element={<Services />} />
       </Routes>
     </Router>
   );

@@ -71,24 +71,12 @@ export default function Header() {
               </span>
             </a>
 
-            {/* <a
-              href="mailto:segurospineda@hotmail.com"
-              style={{
-                color: "#6c757d", 
-                fontSize: "1.8rem",
-                cursor: "pointer",
-              }}
-            >
-              <FaEnvelope />
-              <span className="visually-hidden">segurospineda@hotmail.com</span>
-            </a> */}
-
             <a
               href="https://wa.me/542215704647"
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "#25D366", // verde WhatsApp
+                color: "#25D366",
                 fontSize: "1.8rem",
                 cursor: "pointer",
               }}
@@ -102,7 +90,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "#E1306C", // rosa Instagram
+                color: "#E1306C",
                 fontSize: "1.8rem",
                 cursor: "pointer",
               }}
@@ -129,8 +117,13 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/servicios">
-                  Servicios
+                <a className="nav-link" href="/aboutUs">
+                  Nosotros
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/productos">
+                  Productos
                 </a>
               </li>
               <li className="nav-item">
@@ -138,11 +131,7 @@ export default function Header() {
                   Novedades
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/aboutUs">
-                  Nosotros
-                </a>
-              </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="/contacto">
                   Contacto

@@ -33,9 +33,9 @@ export default function Sidebar() {
           <ul className="text-white list-unstyled px-3 mt-4">
             {[
               { name: "Inicio", href: "/" },
-              { name: "Servicios", href: "/servicios" },
-              { name: "Novedades", href: "/novedades" },
               { name: "Nosotros", href: "/aboutUs" },
+              { name: "Productos", href: "/productos" },
+              { name: "Novedades", href: "/novedades" },
               { name: "Contacto", href: "/contacto" },
             ].map(({ name, href }, index) => (
               <li key={index} className="mb-3">
