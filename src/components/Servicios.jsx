@@ -26,7 +26,9 @@ export default function Servicios() {
                 style={{ height: "200px", objectFit: "cover" }}
               />
               <div className="card-body d-flex flex-column justify-content-between">
-                <h5 className="card-title text-center">{producto.nombre}</h5>
+                <h5 className="text-uppercase text-secondary text-center">
+                  {producto.nombre}
+                </h5>
                 <div className="text-center mt-3">
                   <Link
                     to={`/productos/${producto.id}`}
