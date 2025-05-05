@@ -73,6 +73,11 @@ button:focus-visible {
   color: white;
 }
 
+.bg-dark-footer {
+  background-color: #333333 !important;
+  color: white;
+}
+
 .bg-dark-blue {
   background-color: #0056b3 !important;
 }
@@ -80,6 +85,35 @@ button:focus-visible {
 .color-blue {
   color:#0056b3 !important; ;
 }
+
+.btn-custom {
+  background-color: #004ba0;
+  color: white;
+  border-radius: 0;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-custom:hover {
+  background-color: #003b86; 
+  cursor: pointer;
+}
+
+.form-control {
+  border: 1px solid #333333; 
+  font-size: 1.1rem; 
+  color: #000;
+}
+
+.form-control::placeholder {
+  color: #777; 
+  font-size: 1.05rem; 
+}
+
+
 
 @media (max-width: 768px) {
   .topbar {

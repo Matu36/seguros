@@ -36,54 +36,39 @@ export default function Contacto() {
 
             <form>
               <div className="mb-3">
-                <label htmlFor="nombre" className="form-label">
-                  Nombre
-                </label>
                 <input
                   type="text"
                   className="form-control"
                   id="nombre"
-                  placeholder="Tu nombre"
+                  placeholder="Nombre"
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email
-                </label>
                 <input
                   type="email"
                   className="form-control"
                   id="email"
-                  placeholder="tucorreo@example.com"
+                  placeholder="Email"
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="telefono" className="form-label">
-                  Teléfono
-                </label>
                 <input
                   type="text"
                   className="form-control"
                   id="telefono"
-                  placeholder="Tu número"
+                  placeholder="Teléfono"
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="mensaje" className="form-label">
-                  Mensaje
-                </label>
                 <textarea
                   className="form-control"
                   id="mensaje"
                   rows="4"
-                  placeholder="Escribí tu mensaje..."
+                  placeholder="Mensaje"
                 ></textarea>
               </div>
               <div className=" mt-3">
-                <button
-                  type="submit"
-                  className="btn btn-primary px-4 py-2 fs-6 fw-bold rounded shadow-sm"
-                >
+                <button type="submit" className="btn-custom">
                   ENVIAR MENSAJE
                 </button>
               </div>

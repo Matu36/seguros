@@ -5,16 +5,7 @@ export default function Footer() {
     <footer className="bg-dark-custom text-white text-center py-2">
       <div className="container">
         <p className="mb-0">
-          © 2025 Seguros PINEDA - Todos los derechos reservados
-        </p>
-        <p className="mb-0">
-          <a href="/privacidad" className="text-white">
-            Política de privacidad
-          </a>{" "}
-          |
-          <a href="/terminos" className="text-white">
-            Términos y condiciones
-          </a>
+          © 2025 <strong>SEGUROS PINEDA</strong> - Todos los derechos reservados
         </p>
       </div>
     </footer>
