@@ -82,11 +82,7 @@ export default function Nosotros() {
           ))}
         </div>
       </div>
-      <div
-        className="row min-vh-100 align-items-center"
-        // style={{ marginLeft: "40px" }}
-      >
-        {/* Texto izquierda */}
+      <div className="row min-vh-100 align-items-center">
         <div className="col-md-6 d-flex justify-content-center bg-productos p-5">
           <div>
             <h4
