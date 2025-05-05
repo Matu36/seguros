@@ -19,7 +19,6 @@ import rcProImg from "../assets/images/productos/rcPro/card.jpg";
 import retiroImg from "../assets/images/productos/retiro/card.jpg";
 import sepelioImg from "../assets/images/productos/sepelio/card.jpg";
 import vidaImg from "../assets/images/productos/vida/card.jpg";
-
 import fichaAuto from "../assets/images/productos/automotor/ficha.pdf";
 import videoAuto from "../assets/images/productos/automotor/siniestro.mp4";
 import videoAuto1 from "../assets/images/productos/automotor/conciencia.mp4";
