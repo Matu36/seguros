@@ -18,17 +18,11 @@ export default function NovedadesDetail() {
 
   return (
     <div className="container-fluid py-5 bg-productos">
-      <div className="text-center mb-5">
+      <div className="text-center mb-4">
         <img
           src={novedad.foto}
           alt={novedad.titulo}
-          className="img-fluid rounded shadow"
-          style={{
-            maxHeight: "420px",
-            objectFit: "cover",
-            width: "60%",
-            transition: "transform 0.3s ease",
-          }}
+          className="img-fluid rounded shadow img-novedad"
           onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
           onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
         />
