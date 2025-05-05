@@ -5,6 +5,7 @@ import Contact from "../pages/Contact";
 import Services from "../pages/Services";
 import Inicio from "../pages/Inicio";
 import ProductoDetalle from "../pages/ProductoDetalle";
+import NovedadesDetalle from "../pages/NovedadesDetalle";
 
 export default function AppRouter() {
   return (
@@ -16,6 +17,7 @@ export default function AppRouter() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/productos" element={<Services />} />
         <Route path="/productos/:id" element={<ProductoDetalle />} />
+        <Route path="/novedades/:id" element={<NovedadesDetalle />} />
       </Routes>
     </Router>
   );
