@@ -59,16 +59,16 @@ export default function ProductosDetail() {
         </div>
       )}
       <br />
-      <div className="d-flex justify-content-between mt-3">
+      <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mt-3">
         {producto.video && (
-          <div>
+          <div className="mb-3 mb-md-0 me-md-3">
             <video
               controls
               autoPlay
               muted
               loop
               style={{
-                width: "80%",
+                width: "100%",
                 maxWidth: "400px",
                 height: "400px",
                 borderRadius: "10px",
@@ -80,14 +80,14 @@ export default function ProductosDetail() {
           </div>
         )}
         {producto.video1 && (
-          <div>
+          <div className="mb-3 mb-md-0 me-md-3">
             <video
               controls
               autoPlay
               muted
               loop
               style={{
-                width: "80%",
+                width: "100%",
                 maxWidth: "400px",
                 height: "400px",
                 borderRadius: "10px",
@@ -99,14 +99,14 @@ export default function ProductosDetail() {
           </div>
         )}
         {producto.video2 && (
-          <div>
+          <div className="mb-3 mb-md-0 me-md-3">
             <video
               controls
               autoPlay
               muted
               loop
               style={{
-                width: "80%",
+                width: "100%",
                 maxWidth: "400px",
                 height: "400px",
                 borderRadius: "10px",
