@@ -18,7 +18,7 @@ export default function NovedadesDetail() {
 
   return (
     <div className="container-fluid py-5 bg-productos">
-      <div className="text-center mb-4">
+      <div className="text-center mb-5">
         <img
           src={novedad.foto}
           alt={novedad.titulo}
@@ -34,7 +34,7 @@ export default function NovedadesDetail() {
         {novedad.titulo}
       </h1>
       <div
-        className="p-4"
+        className="p-2"
         style={{
           maxWidth: "850px",
           margin: "0 auto",
@@ -44,7 +44,7 @@ export default function NovedadesDetail() {
         }}
       >
         {novedad.descripcionAmpliada.split("\n").map((parrafo, index) => (
-          <p key={index} className="mb-4">
+          <p key={index} className="mb-2">
             {parrafo}
           </p>
         ))}
