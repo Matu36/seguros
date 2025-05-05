@@ -113,6 +113,11 @@ button:focus-visible {
   font-size: 1.05rem; 
 }
 
+.bg-productos {
+  background-color: #f2f2f2; 
+}
+
+
 
 
 @media (max-width: 768px) {

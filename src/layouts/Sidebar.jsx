@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Offcanvas } from "react-bootstrap";
-import sidebarImg from "../assets/images/sidebar.jpg";
 import imagen1 from "../assets/images/LOGOHEADER.png";
 
 export default function Sidebar() {

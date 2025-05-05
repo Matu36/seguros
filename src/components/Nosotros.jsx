@@ -6,7 +6,6 @@ import {
   FaRoad,
   FaShieldAlt,
 } from "react-icons/fa";
-import nosotros from "../assets/images/nosotros2.png";
 import Carousel from "../utils/Carrousel";
 
 export default function Nosotros() {
@@ -35,7 +34,7 @@ export default function Nosotros() {
   ];
 
   return (
-    <div className="container-fluid p-2 bg-light">
+    <div className="container-fluid p-2 bg-productos">
       {/* Imagen principal */}
       <img
         src={nosotrosImg}
@@ -88,7 +87,7 @@ export default function Nosotros() {
         // style={{ marginLeft: "40px" }}
       >
         {/* Texto izquierda */}
-        <div className="col-md-6 d-flex justify-content-center bg-light p-5">
+        <div className="col-md-6 d-flex justify-content-center bg-productos p-5">
           <div>
             <h4
               className="text-uppercase text-secondary mb-2"

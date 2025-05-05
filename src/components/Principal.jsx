@@ -22,7 +22,7 @@ export default function Principal() {
 
       <div className="row min-vh-100 align-items-center mt-2">
         {/* Texto izquierda */}
-        <div className="col-md-6 d-flex justify-content-center bg-light p-5">
+        <div className="col-md-6 d-flex justify-content-center p-5">
           <div>
             <h4
               className="text-uppercase text-secondary mb-2"
@@ -171,7 +171,7 @@ export default function Principal() {
           </Link>
         </div>
       </div>
-      <div className="container-fluid bg-light py-5 px-md-5 px-4">
+      <div className="container-fluid bg-productos py-5 px-md-5 px-4">
         <h4
           className="text-uppercase text-secondary text-center"
           style={{ letterSpacing: "1px" }}

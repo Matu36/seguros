@@ -4,6 +4,7 @@ import News from "../pages/News";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
 import Inicio from "../pages/Inicio";
+import ProductoDetalle from "../pages/ProductoDetalle";
 
 export default function AppRouter() {
   return (
@@ -14,6 +15,7 @@ export default function AppRouter() {
         <Route path="/novedades" element={<News />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="/productos" element={<Services />} />
+        <Route path="/productos/:id" element={<ProductoDetalle />} />
       </Routes>
     </Router>
   );
