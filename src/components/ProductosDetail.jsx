@@ -63,10 +63,10 @@ export default function ProductosDetail() {
         {producto.video && (
           <div className="mb-3 mb-md-0 me-md-3">
             <video
-              controls
               autoPlay
               muted
               loop
+              playsInline
               style={{
                 width: "100%",
                 maxWidth: "400px",
@@ -82,10 +82,10 @@ export default function ProductosDetail() {
         {producto.video1 && (
           <div className="mb-3 mb-md-0 me-md-3">
             <video
-              controls
               autoPlay
               muted
               loop
+              playsInline
               style={{
                 width: "100%",
                 maxWidth: "400px",
@@ -101,10 +101,10 @@ export default function ProductosDetail() {
         {producto.video2 && (
           <div className="mb-3 mb-md-0 me-md-3">
             <video
-              controls
               autoPlay
               muted
               loop
+              playsInline
               style={{
                 width: "100%",
                 maxWidth: "400px",
