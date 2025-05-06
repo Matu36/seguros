@@ -1,4 +1,6 @@
 const { Contacto } = require("../db.js");
+const { NODEMAILER_ADMIN, NODEMAILER_USER } = process.env;
+const transporter = require("../mailer/mailer.js");
 
 const createContacto = async (req, res) => {
   try {
@@ -35,6 +37,19 @@ const createContacto = async (req, res) => {
       email,
       telefono,
       consulta,
+    });
+
+    await transporter.sendMail({
+      from: `"Web Contacto" <${NODEMAILER_USER}>`,
+      to: NODEMAILER_ADMIN,
+      subject: "Nuevo contacto desde la web",
+      html: `
+        <h2>Nuevo contacto recibido</h2>
+        <p><strong>Nombre:</strong> ${nombre}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Teléfono:</strong> ${telefono}</p>
+        <p><strong>Consulta:</strong><br/>${consulta}</p>
+      `,
     });
 
     return res.status(201).json(nuevoContacto);
