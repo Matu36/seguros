@@ -30,7 +30,6 @@ body {
   flex-direction: column;
 }
 
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -83,7 +82,7 @@ button:focus-visible {
 }
 
 .color-blue {
-  color:#0056b3 !important; ;
+  color: #0056b3 !important;
 }
 
 .btn-custom {
@@ -98,27 +97,24 @@ button:focus-visible {
 }
 
 .btn-custom:hover {
-  background-color: #003b86; 
+  background-color: #003b86;
   cursor: pointer;
 }
 
 .form-control {
-  border: 1px solid #333333; 
-  font-size: 1.1rem; 
+  border: 1px solid #333333;
+  font-size: 1.1rem;
   color: #000;
 }
 
 .form-control::placeholder {
-  color: #777; 
-  font-size: 1.05rem; 
+  color: #777;
+  font-size: 1.05rem;
 }
 
 .bg-productos {
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
 }
-
-
-
 
 @media (max-width: 768px) {
   .topbar {
@@ -138,17 +134,17 @@ button:focus-visible {
 }
 
 .custom-toggler {
-  border: none; 
-  background-color: transparent; 
+  border: none;
+  background-color: transparent;
   position: relative;
-  top: 2px; 
-  padding: 5px; 
+  top: 2px;
+  padding: 5px;
 }
 
 .custom-toggler .navbar-toggler-icon {
-  width: 30px; 
-  height: 2px; 
-  background-color: #000; 
+  width: 30px;
+  height: 2px;
+  background-color: #000;
   position: relative;
 }
 
@@ -157,17 +153,17 @@ button:focus-visible {
   content: "";
   position: absolute;
   left: 0;
-  width: 30px; 
-  height: 2px; 
-  background-color: #000; 
+  width: 30px;
+  height: 2px;
+  background-color: #000;
 }
 
 .custom-toggler .navbar-toggler-icon::before {
-  top: -8px; 
+  top: -8px;
 }
 
 .custom-toggler .navbar-toggler-icon::after {
-  top: 8px; 
+  top: 8px;
 }
 
 .topbar a {
@@ -198,7 +194,6 @@ button:focus-visible {
   border-bottom: 2px solid #0056b3;
 }
 
-
 .contact-info span {
   font-size: 0.95rem;
   color: #f1f1f1;
@@ -217,7 +212,7 @@ button:focus-visible {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1); 
+  background: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,14 +223,13 @@ button:focus-visible {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  background: #0056b3; 
+  background: #0056b3;
   padding: 4px 14px;
   border-radius: 5px;
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-
 
 .sidebar-link {
   color: white;
@@ -245,14 +239,12 @@ button:focus-visible {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   display: block;
   transition: color 0.3s ease;
-  padding: 0.5rem 0; 
+  padding: 0.5rem 0;
 }
-
 
 .sidebar-link:hover {
-  color: #003366; 
+  color: #003366;
 }
-
 
 .logo-sidebar {
   width: 40%;
@@ -265,53 +257,62 @@ button:focus-visible {
   justify-content: center;
 }
 
-
 .carouselContainer {
-  --sizeImg : 200px;
-   position: relative;
-   display: flex;
-   align-content: center;
-   align-items: center;
-   justify-content: center;
-   justify-items: center;
-   flex-wrap: wrap;
-   transform-style: preserve-3d;
-   perspective: 500px;
-   width: 100%;
-   
-  }
-  .link {
-    border: 1px solid white;
-  }
+  --sizeImg: 200px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  width: 100%;
+}
+.link {
+  border: 1px solid white;
+}
 
-  .carousel-container .slick-slide {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-  
-  .carousel-container .carousel-image {
-    width: 100%; 
-    height: 400px; 
-    object-fit: cover; 
-  }
+.carousel-container .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.carousel-container .carousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-novedad {
+  width: 60%;
+  max-height: 420px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
   .img-novedad {
-    width: 60%;
-    max-height: 420px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    max-height: 800px;
   }
-  
-  @media (max-width: 768px) {
-    .img-novedad {
-      width: 100%;
-      max-height: 800px; 
-    }
-  }
-  
+}
 
+.swal-custom-button {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  font-weight: 600;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
 
-  
+.swal-custom-button:hover {
+  background-color: #0b5ed7 !important;
+}
