@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ContactoImg from "../assets/images/CONTACTO.png";
 import { useContacto } from "../hooks/useContacto";
 import Swal from "sweetalert2";
+import TelefonosUtiles from "./telefonosUtiles";
 
 const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -116,9 +117,8 @@ export default function Contacto() {
 
               <p className="mt-2 fw-semibold text-dark">
                 No dudes en contactarnos si tenés alguna pregunta, inquietud o
-                si querés <br />
-                recibir asesoramiento para cotizar el producto que estás
-                buscando.
+                si querés recibir asesoramiento para cotizar el producto que
+                estás buscando.
               </p>
             </div>
 
