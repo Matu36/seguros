@@ -13,14 +13,13 @@ import videoCelular from "../assets/videos/celular.mp4";
 export default function Principal() {
   return (
     <div className="container-fluid p-0">
-      {/* Imagen principal */}
       <img
         src={imgPrincipal}
         alt="imagen principal"
         className="img-fluid w-100"
       />
 
-      <div className="row min-vh-100 align-items-center mt-2">
+      <div className="row min-vh-90 align-items-center mt-5 mb-5">
         {/* Texto izquierda */}
         <div className="col-md-6 d-flex justify-content-center p-5">
           <div>

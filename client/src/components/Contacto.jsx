@@ -90,8 +90,8 @@ export default function Contacto() {
   };
 
   return (
-    <div className="container-fluid">
-      <div className="row min-vh-100">
+    <div className="container mt-4 mb-4">
+      <div className="row">
         {/* Imagen lado izquierdo */}
         <div className="col-md-6 p-2">
           <img
@@ -115,14 +115,15 @@ export default function Contacto() {
               </p>
 
               <p className="mt-2 fw-semibold text-dark">
-                Contactate con nosotros por cualquier duda, inquietud, o para{" "}
-                <br />
-                formar parte de nuestra red de productores.
+                No dudes en contactarnos si tenés alguna pregunta, inquietud o
+                si querés <br />
+                recibir asesoramiento para cotizar el producto que estás
+                buscando.
               </p>
             </div>
 
             <form onSubmit={handleSubmit}>
-              <div className="mb-3">
+              <div className="mb-4">
                 <input
                   type="text"
                   className="form-control mb-3"
@@ -178,7 +179,7 @@ export default function Contacto() {
                 ></textarea>
               </div>
 
-              <div className="mt-3">
+              <div className="mt-4">
                 <button
                   type="submit"
                   className="btn-custom"
