@@ -42,12 +42,12 @@ export default function Nosotros() {
         className="img-fluid w-100"
       />
 
-      <div className="container py-5 ">
-        <div className="row row-cols-1 row-cols-md-4 g-4">
+      <div className="container-fluid py-5 mb-4">
+        <div className="row row-cols-1 row-cols-md-4 g-4 p-2">
           {cardsData.map((card, index) => (
             <div className="col" key={index}>
               <div
-                className="card h-100 text-center border-0 shadow-sm p-3"
+                className="card h-100 text-center border-0 shadow-sm p-4"
                 style={{
                   transition:
                     "transform 0.3s, background-color 0.3s, color 0.3s",
@@ -70,8 +70,8 @@ export default function Nosotros() {
                     "normal";
                 }}
               >
-                <div className="card-body">
-                  <div className="mb-3" style={{ fontSize: "2rem" }}>
+                <div className="card-body p-4">
+                  <div className="mb-2" style={{ fontSize: "2rem" }}>
                     {card.icon}
                   </div>
                   <h5 className="card-title">{card.title}</h5>
@@ -82,11 +82,11 @@ export default function Nosotros() {
           ))}
         </div>
       </div>
-      <div className="row min-vh-100 align-items-center">
+      <div className="row align-items-center">
         <div className="col-md-6 d-flex justify-content-center bg-productos p-5">
           <div>
             <h4
-              className="text-uppercase text-secondary mb-2"
+              className="text-uppercase text-secondary"
               style={{ letterSpacing: "1px" }}
             >
               Acerca de la Compañía
