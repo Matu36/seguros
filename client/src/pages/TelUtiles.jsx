@@ -1,5 +1,5 @@
 import React from "react";
-import TelefonosUtiles from "../components/telefonosUtiles";
+import TelefonosUtiles from "../components/TelefonosUtiles";
 import Layout from "../layouts/Layout";
 
 export default function TelUtiles() {
