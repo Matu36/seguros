@@ -2,14 +2,22 @@ import React, { useState } from "react";
 import ContactoImg from "../assets/images/CONTACTO.png";
 import { useContacto } from "../hooks/useContacto";
 import Swal from "sweetalert2";
-import TelefonosUtiles from "./telefonosUtiles";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const telefonoRegex = /^[0-9]*$/;
 const consultaRegex = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.,;:!?]*$/;
 
+const SITE_KEY = `${import.meta.env.SITE_KEY}`;
+
 export default function Contacto() {
+  const [captchaToken, setCaptchaToken] = useState(null);
+
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token); // SE MANDA AL BAKEND
+  };
+
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
@@ -21,6 +29,7 @@ export default function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (
       nombreRegex.test(formData.nombre) &&
       emailRegex.test(formData.email) &&
