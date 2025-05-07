@@ -26,6 +26,8 @@ import videoAuto2 from "../assets/images/productos/automotor/control.mp4";
 import imgagro1 from "../assets/images/productos/agro/img1.jpg";
 import imgagro2 from "../assets/images/productos/agro/img2.jpg";
 import imgagro3 from "../assets/images/productos/agro/img3.jpg";
+import imgap1 from "../assets/images/productos/ap/img1ap.jpg";
+import imgap2 from "../assets/images/productos/ap/img2ap.jpg";
 
 export const productos = [
   {
@@ -44,10 +46,11 @@ export const productos = [
   {
     id: 2,
     nombre: "Accidentes Personales",
-    descripcion: "",
+    descripcion:
+      "El seguro de accidentes personales es una cobertura diseñada para proteger económicamente a una persona en caso de sufrir un accidente que le cause lesiones físicas, invalidez o incluso el fallecimiento. Este tipo de seguro ofrece una indemnización al asegurado o a sus beneficiarios según el tipo de daño sufrido, permitiendo afrontar gastos médicos, rehabilitación o pérdidas de ingresos por incapacidad.",
     imagen1: apImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: imgap1,
+    imagen3: imgap2,
     imagen4: "",
     video: "",
     video1: "",

@@ -19,7 +19,7 @@ export default function ProductosDetail() {
         {producto.nombre}
       </h2>
       <h5
-        className="text-center text-secondary mb-2"
+        className="text-center text-secondary mb-4"
         style={{ letterSpacing: "1px" }}
       >
         {producto.descripcion}
