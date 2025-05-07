@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import fuguito from "../assets/images/fuguito.png";
 import FUGOSOLO from "../assets/images/FUGOSOLO.jpg";
-import SOLIRECI from "../assets/images/SOLIRECIBIDA.JPG";
+import SOLIRECI from "../assets/images/SOLIRECIBIDA.jpg";
 
 const Carousel = () => {
   const settings = {
