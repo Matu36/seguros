@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import ContactoImg from "../assets/images/CONTACTO.png";
 import { useContacto } from "../hooks/useContacto";
 import Swal from "sweetalert2";
-// import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const telefonoRegex = /^[0-9]*$/;
 const consultaRegex = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.,;:!?]*$/;
 
-// const SITE_KEY = `${import.meta.env.SITE_KEY}`;
+const SITE_KEY = `${import.meta.env.VITE_SITE_KEY}`;
 
 export default function Contacto() {
   const [captchaToken, setCaptchaToken] = useState(null);
@@ -36,50 +36,53 @@ export default function Contacto() {
       telefonoRegex.test(formData.telefono) &&
       consultaRegex.test(formData.consulta)
     ) {
-      crearContacto(formData, {
-        onSuccess: () => {
-          Swal.fire({
-            title: "Mensaje enviado",
-            html: `<p style="font-weight:600; color:#fff;">Gracias por contactarnos. Te responderemos pronto.</p>`,
-            background: "#0056b3",
-            confirmButtonText: "Aceptar",
-            customClass: {
-              popup: "swal-custom-popup",
-              confirmButton: "swal-custom-button",
-            },
-            showClass: {
-              popup: "animate__animated animate__fadeInDown",
-            },
-            hideClass: {
-              popup: "animate__animated animate__fadeOutUp",
-            },
-          });
+      crearContacto(
+        { ...formData, captchaToken },
+        {
+          onSuccess: () => {
+            Swal.fire({
+              title: "Mensaje enviado",
+              html: `<p style="font-weight:600; color:#fff;">Gracias por contactarnos. Te responderemos pronto.</p>`,
+              background: "#0056b3",
+              confirmButtonText: "Aceptar",
+              customClass: {
+                popup: "swal-custom-popup",
+                confirmButton: "swal-custom-button",
+              },
+              showClass: {
+                popup: "animate__animated animate__fadeInDown",
+              },
+              hideClass: {
+                popup: "animate__animated animate__fadeOutUp",
+              },
+            });
 
-          setFormData({
-            nombre: "",
-            email: "",
-            telefono: "",
-            consulta: "",
-          });
-        },
-        onError: () => {
-          Swal.fire({
-            html: `<p style="font-weight:600; color:#fff;">Hubo un problema al enviar el mensaje. Intentalo más tarde.</p>`,
-            background: "#0056b3",
-            confirmButtonText: "Cerrar",
-            customClass: {
-              popup: "swal-custom-popup",
-              confirmButton: "swal-custom-button",
-            },
-            showClass: {
-              popup: "animate__animated animate__fadeInDown",
-            },
-            hideClass: {
-              popup: "animate__animated animate__fadeOutUp",
-            },
-          });
-        },
-      });
+            setFormData({
+              nombre: "",
+              email: "",
+              telefono: "",
+              consulta: "",
+            });
+          },
+          onError: () => {
+            Swal.fire({
+              html: `<p style="font-weight:600; color:#fff;">Hubo un problema al enviar el mensaje. Intentalo más tarde.</p>`,
+              background: "#0056b3",
+              confirmButtonText: "Cerrar",
+              customClass: {
+                popup: "swal-custom-popup",
+                confirmButton: "swal-custom-button",
+              },
+              showClass: {
+                popup: "animate__animated animate__fadeInDown",
+              },
+              hideClass: {
+                popup: "animate__animated animate__fadeOutUp",
+              },
+            });
+          },
+        }
+      );
     } else {
       Swal.fire({
         html: `<p style="font-weight:600; color:#fff;">Por favor, completá todos los campos correctamente.</p>`,
@@ -187,7 +190,7 @@ export default function Contacto() {
                   }}
                 ></textarea>
               </div>
-
+              <ReCAPTCHA sitekey={SITE_KEY} onChange={handleCaptchaChange} />
               <div className="mt-4">
                 <button
                   type="submit"
