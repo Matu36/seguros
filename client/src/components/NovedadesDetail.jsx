@@ -17,7 +17,7 @@ export default function NovedadesDetail() {
   }
 
   return (
-    <div className="container-fluid py-5 bg-productos">
+    <div className="container-fluid py-2 bg-productos">
       <div className="text-center mb-5">
         <img
           src={novedad.foto}

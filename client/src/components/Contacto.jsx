@@ -100,7 +100,7 @@ export default function Contacto() {
   };
 
   return (
-    <div className="container mt-4 mb-4">
+    <div className="container">
       <div className="row">
         {/* Imagen lado izquierdo */}
         <div className="col-md-6 p-2">

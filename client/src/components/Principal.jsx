@@ -170,7 +170,7 @@ export default function Principal() {
           </Link>
         </div>
       </div>
-      <div className="container-fluid bg-productos py-5 px-md-5 px-4">
+      <div className="container-fluid bg-productos py-3 px-md-5 px-4 mt-4">
         <h4
           className="text-uppercase text-secondary text-center"
           style={{ letterSpacing: "1px" }}

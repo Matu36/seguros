@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function Servicios() {
   return (
-    <div className="container-fluid py-5 text-center bg-productos">
+    <div className="container-fluid py-2 text-center bg-productos">
       <h4
         className="text-uppercase text-secondary mb-2"
         style={{ letterSpacing: "1px" }}

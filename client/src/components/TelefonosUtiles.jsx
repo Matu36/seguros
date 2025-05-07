@@ -3,7 +3,7 @@ import { telefonosUtiles } from "../utils/telefonosUtiles";
 
 export default function TelefonosUtiles() {
   return (
-    <div className="container bg-productos py-2">
+    <div className="container-fluid px-2 bg-productos py-2">
       <h4
         className="text-uppercase text-secondary text-center mt-2 "
         style={{ letterSpacing: "1px" }}

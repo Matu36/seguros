@@ -42,7 +42,7 @@ export default function Nosotros() {
         className="img-fluid w-100"
       />
 
-      <div className="container-fluid py-5 mb-4">
+      <div className="container-fluid py-5">
         <div className="row row-cols-1 row-cols-md-4 g-4 p-2">
           {cardsData.map((card, index) => (
             <div className="col" key={index}>
@@ -83,7 +83,7 @@ export default function Nosotros() {
         </div>
       </div>
       <div className="row align-items-center">
-        <div className="col-md-6 d-flex justify-content-center bg-productos p-5">
+        <div className="col-md-6 d-flex justify-content-center bg-productos px-4">
           <div>
             <h4
               className="text-uppercase text-secondary"

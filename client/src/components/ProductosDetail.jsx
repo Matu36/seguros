@@ -11,7 +11,7 @@ export default function ProductosDetail() {
   }
 
   return (
-    <div className="container py-3 bg-productos">
+    <div className="container-fluid py-2 bg-productos">
       <h2
         className="color-blue fw-bold mb-4 text-center"
         style={{ fontSize: "2rem" }}
