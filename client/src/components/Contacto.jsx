@@ -30,6 +30,25 @@ export default function Contacto() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!captchaToken) {
+      Swal.fire({
+        html: `<p style="font-weight:600; color:#fff;">Por favor, completá el reCAPTCHA antes de enviar.</p>`,
+        background: "#0056b3",
+        confirmButtonText: "Ok",
+        customClass: {
+          popup: "swal-custom-popup",
+          confirmButton: "swal-custom-button",
+        },
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+      return;
+    }
+
     if (
       nombreRegex.test(formData.nombre) &&
       emailRegex.test(formData.email) &&
