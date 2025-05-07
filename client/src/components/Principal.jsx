@@ -19,7 +19,7 @@ export default function Principal() {
         className="img-fluid w-100"
       />
 
-      <div className="row min-vh-90 align-items-center mt-5 mb-5">
+      <div className="row min-vh-90 align-items-center mt-2 mb-5">
         {/* Texto izquierda */}
         <div className="col-md-6 d-flex justify-content-center p-5">
           <div>
