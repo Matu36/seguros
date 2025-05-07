@@ -151,15 +151,6 @@ export default function Header() {
                   (221) 5704647
                 </a>
               </li>
-              {/* <li className="nav-item">
-                <a
-                  className="nav-link px-2 small text-muted"
-                  href="/telUtiles"
-                  style={{ fontSize: "0.8rem" }}
-                >
-                  Teléfonos útiles
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

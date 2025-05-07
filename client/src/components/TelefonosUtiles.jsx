@@ -3,11 +3,14 @@ import { telefonosUtiles } from "../utils/telefonosUtiles";
 
 export default function TelefonosUtiles() {
   return (
-    <div style={{ backgroundColor: "#e0e0e0", padding: "2rem" }}>
-      <h2 className="text-center mb-4 text-dark text-uppercase">
+    <div className="container bg-productos py-2">
+      <h4
+        className="text-uppercase text-secondary text-center mt-2 "
+        style={{ letterSpacing: "1px" }}
+      >
         Teléfonos Útiles
-      </h2>
-      <div className="row">
+      </h4>
+      <div className="row mt-4">
         {telefonosUtiles.map((item) => (
           <div key={item.id} className="col-md-6 mb-3">
             <div

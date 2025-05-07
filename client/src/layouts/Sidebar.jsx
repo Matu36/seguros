@@ -36,6 +36,7 @@ export default function Sidebar() {
               { name: "Productos", href: "/productos" },
               { name: "Novedades", href: "/novedades" },
               { name: "Contacto", href: "/contacto" },
+              { name: "Teléfonos útiles", href: "/telUtiles" },
             ].map(({ name, href }, index) => (
               <li key={index} className="mb-3">
                 <a
