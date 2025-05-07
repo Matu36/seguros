@@ -45,7 +45,7 @@ const createContacto = async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: `"Web Contacto" <${NODEMAILER_USER}>`,
+      from: `"SEGUROS PINEDA" <${NODEMAILER_USER}>`,
       to: NODEMAILER_ADMIN,
       subject: "Nuevo contacto desde la web",
       html: `

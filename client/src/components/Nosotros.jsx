@@ -101,10 +101,10 @@ export default function Nosotros() {
               className="text-dark fs-5"
               style={{ maxWidth: "90%", lineHeight: "1.7" }}
             >
-              En <strong>Seguros Pineda</strong>, nos enfocamos en atender las
-              necesidades de los clientes, brindando el asesoramiento y apoyo
-              necesarios para que puedan ofrecer un servicio de calidad a sus
-              clientes y alcanzar el éxito en su carrera profesional.
+              <strong>Seguros Pineda</strong>, comenzó en el año 1987 con
+              nuestro papá, Hugo. Huguito hacia las cobranzas de distintos
+              productores y debido a su carácter responsable y simpático fue
+              haciéndose de una cartera que creció debido al boca en boca.
             </p>
           </div>
         </div>
