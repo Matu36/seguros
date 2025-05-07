@@ -24,13 +24,41 @@ export default function ProductosDetail() {
       >
         {producto.descripcion}
       </h5>
-      {/* {producto.imagen1 && (
-        <img
-          src={producto.imagen1}
-          alt={producto.nombre}
-          style={{ maxWidth: "100%", height: "auto" }}
-        />
-      )} */}
+      <div className="container">
+        <div className="row">
+          {producto.imagen2 && (
+            <div className="col-md-6 mb-3">
+              <img
+                src={producto.imagen2}
+                alt={producto.nombre}
+                className="img-fluid rounded shadow-sm w-100"
+                style={{ height: "500px", objectFit: "cover" }}
+              />
+            </div>
+          )}
+          {producto.imagen3 && (
+            <div className="col-md-6 mb-3">
+              <img
+                src={producto.imagen3}
+                alt={producto.nombre}
+                className="img-fluid rounded shadow-sm w-100"
+                style={{ height: "500px", objectFit: "cover" }}
+              />
+            </div>
+          )}
+          {producto.imagen4 && (
+            <div className="col-12">
+              <img
+                src={producto.imagen4}
+                alt={producto.nombre}
+                className="img-fluid rounded shadow-sm w-100"
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+          )}
+        </div>
+      </div>
+
       {producto.fichaPDF && (
         <div className="mt-4 text-center mb-4">
           <br />

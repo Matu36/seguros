@@ -23,16 +23,19 @@ import fichaAuto from "../assets/images/productos/automotor/ficha.pdf";
 import videoAuto from "../assets/images/productos/automotor/siniestro.mp4";
 import videoAuto1 from "../assets/images/productos/automotor/conciencia.mp4";
 import videoAuto2 from "../assets/images/productos/automotor/control.mp4";
+import imgagro1 from "../assets/images/productos/agro/img1.jpg";
+import imgagro2 from "../assets/images/productos/agro/img2.jpg";
+import imgagro3 from "../assets/images/productos/agro/img3.jpg";
 
 export const productos = [
   {
     id: 1,
-    nombre: "Seguros agropecuarios",
+    nombre: "Seguros Agropecuarios",
     descripcion: "",
     imagen1: agroImg,
-    imagen2: "",
-    imagen3: "",
-    imagen4: "",
+    imagen2: imgagro1,
+    imagen3: imgagro2,
+    imagen4: imgagro3,
     video: "",
     video1: "",
     video2: "",
