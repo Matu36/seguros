@@ -143,7 +143,8 @@ export const productos = [
   {
     id: 8,
     nombre: "Autos Clásicos",
-    descripcion: "",
+    descripcion:
+      "Protegé tu joya sobre ruedas con una cobertura pensada especialmente para vehículos clásicos y de colección. Nuestro seguro para autos clásicos ofrece protección integral adaptada al valor real y al uso particular de este tipo de vehículos. ",
     imagen1: clasicoImg,
     imagen2: clasicoImg,
     imagen3: img1cla,
