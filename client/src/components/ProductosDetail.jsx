@@ -13,7 +13,7 @@ export default function ProductosDetail() {
   return (
     <div className="container-fluid bg-productos">
       <h2
-        className="color-blue fw-bold mb-4 text-center mt-2"
+        className="color-blue fw-bold mb-4 text-center mt-2 py-4"
         style={{ fontSize: "2rem" }}
       >
         {producto.nombre}
@@ -24,7 +24,7 @@ export default function ProductosDetail() {
       >
         {producto.descripcion}
       </h5>
-      <div className="container-fluid">
+      <div className="container-fluid py-2">
         <div className="row">
           {producto.imagen2 && (
             <div className="col-md-6 mb-4">
@@ -50,9 +50,9 @@ export default function ProductosDetail() {
       </div>
 
       {producto.fichaPDF && (
-        <div className="mt-2 text-center">
+        <div className="text-center">
           <br />
-          <div className="mb-4 mt-2">
+          <div className="mb-4">
             <a
               href={producto.fichaPDF}
               target="_blank"
@@ -77,7 +77,7 @@ export default function ProductosDetail() {
         </div>
       )}
       <br />
-      <div className="d-flex flex-column flex-md-row align-items-center justify-content-around py-4">
+      <div className="d-flex flex-column flex-md-row align-items-center justify-content-around">
         {producto.video && (
           <div className="mb-3 mb-md-0 me-md-3">
             <video
@@ -90,6 +90,7 @@ export default function ProductosDetail() {
                 maxWidth: "400px",
                 height: "400px",
                 borderRadius: "10px",
+                paddingBottom: "2rem",
               }}
             >
               <source src={producto.video} type="video/mp4" />

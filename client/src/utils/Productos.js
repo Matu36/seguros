@@ -38,6 +38,8 @@ import fichacasa from "../assets/images/productos/casa/fichacasa.pdf";
 import img1ciclista from "../assets/images/productos/ciclistas/img1ciclista.jpg";
 import img2ciclista from "../assets/images/productos/ciclistas/img2ciclista.jpg";
 import fichaciclista from "../assets/images/productos/ciclistas/fichaciclista.pdf";
+import img1cla from "../assets/images/productos/clasicos/img1cla.jpg";
+import fichacla from "../assets/images/productos/clasicos/fichacla.pdf";
 
 export const productos = [
   {
@@ -143,13 +145,13 @@ export const productos = [
     nombre: "Autos Clásicos",
     descripcion: "",
     imagen1: clasicoImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: clasicoImg,
+    imagen3: img1cla,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichacla,
   },
   {
     id: 9,
