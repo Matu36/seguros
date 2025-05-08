@@ -32,6 +32,12 @@ import img1col from "../assets/images/productos/ap/colonia/img1col.jpg";
 import img2col from "../assets/images/productos/ap/colonia/img2col.jpg";
 import fichacol from "../assets/images/productos/ap/colonia/fichacol.pdf";
 import videoapmed from "../assets/images/productos/ap/medicina/videoapmed.mp4";
+import img1casa from "../assets/images/productos/casa/img1casa.jpg";
+import img2casa from "../assets/images/productos/casa/img2casa.jpg";
+import fichacasa from "../assets/images/productos/casa/fichacasa.pdf";
+import img1ciclista from "../assets/images/productos/ciclistas/img1ciclista.jpg";
+import img2ciclista from "../assets/images/productos/ciclistas/img2ciclista.jpg";
+import fichaciclista from "../assets/images/productos/ciclistas/fichaciclista.pdf";
 
 export const productos = [
   {
@@ -106,29 +112,31 @@ export const productos = [
   },
   {
     id: 6,
-    nombre: "Combinado Familiar (casa)",
-    descripcion: "",
+    nombre: "Combinado Familiar (Hogar)",
+    descripcion:
+      "El seguro combinado familiar es una solución integral que protege tu hogar y a tu familia ante múltiples riesgos. Cubre tanto la estructura de la vivienda como su contenido, frente a eventos como incendios, robos, daños por agua, y más. Además, incluye asistencia domiciliaria y responsabilidad civil frente a terceros.",
     imagen1: casaImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1casa,
+    imagen3: img2casa,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichacasa,
   },
   {
     id: 7,
     nombre: "Integral Ciclistas",
-    descripcion: "",
+    descripcion:
+      "El seguro integral para ciclistas está diseñado especialmente para quienes usan la bicicleta como medio de transporte, recreación o entrenamiento. Brinda cobertura tanto para el ciclista como para su bicicleta, protegiéndolos ante accidentes personales, robos, daños materiales y responsabilidad civil frente a terceros.",
     imagen1: ciclistasImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img2ciclista,
+    imagen3: img1ciclista,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichaciclista,
   },
   {
     id: 8,

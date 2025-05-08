@@ -50,7 +50,7 @@ export default function ProductosDetail() {
       </div>
 
       {producto.fichaPDF && (
-        <div className="mt-2 text-center mb-2 ">
+        <div className="mt-2 text-center">
           <br />
           <div className="mb-4 mt-2">
             <a
