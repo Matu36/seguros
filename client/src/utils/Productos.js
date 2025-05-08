@@ -45,6 +45,9 @@ import vidaimg2 from "../assets/images/productos/colectivo/vidaimg2.jpg";
 import img1com from "../assets/images/productos/comercio/img1com.jpg";
 import img2com from "../assets/images/productos/comercio/img2com.jpg";
 import videocom from "../assets/images/productos/comercio/videocom.mp4";
+import img1con from "../assets/images/productos/consorcio/img1con.jpg";
+import img2con from "../assets/images/productos/consorcio/img2con.jpg";
+import fichacon from "../assets/images/productos/consorcio/fichacon.pdf";
 
 export const productos = [
   {
@@ -193,13 +196,13 @@ export const productos = [
     descripcion:
       "Protección total para edificios residenciales y comerciales. El Seguro Integral de Consorcio cubre los riesgos más frecuentes que pueden afectar a propietarios, inquilinos y administradores",
     imagen1: consorcioImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1con,
+    imagen3: img2con,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichacon,
   },
   {
     id: 12,
