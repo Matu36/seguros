@@ -40,6 +40,8 @@ import img2ciclista from "../assets/images/productos/ciclistas/img2ciclista.jpg"
 import fichaciclista from "../assets/images/productos/ciclistas/fichaciclista.pdf";
 import img1cla from "../assets/images/productos/clasicos/img1cla.jpg";
 import fichacla from "../assets/images/productos/clasicos/fichacla.pdf";
+import vidaimg1 from "../assets/images/productos/colectivo/vidaimg1.jpg";
+import vidaimg2 from "../assets/images/productos/colectivo/vidaimg2.jpg";
 
 export const productos = [
   {
@@ -157,10 +159,11 @@ export const productos = [
   {
     id: 9,
     nombre: "Vida Colectivo",
-    descripcion: "",
+    descripcion:
+      "Brindá a tu equipo la tranquilidad que merece y reforzá el compromiso de tu empresa con un plan de protección pensado para personas que trabajan juntas día a día. Nuestro Seguro de Vida Colectivo ofrece coberturas flexibles y beneficios exclusivos que se adaptan al tamaño y las necesidades de tu organización",
     imagen1: colectivoImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: vidaimg1,
+    imagen3: vidaimg2,
     imagen4: "",
     video: "",
     video1: "",
