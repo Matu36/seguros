@@ -42,6 +42,9 @@ import img1cla from "../assets/images/productos/clasicos/img1cla.jpg";
 import fichacla from "../assets/images/productos/clasicos/fichacla.pdf";
 import vidaimg1 from "../assets/images/productos/colectivo/vidaimg1.jpg";
 import vidaimg2 from "../assets/images/productos/colectivo/vidaimg2.jpg";
+import img1com from "../assets/images/productos/comercio/img1com.jpg";
+import img2com from "../assets/images/productos/comercio/img2com.jpg";
+import videocom from "../assets/images/productos/comercio/videocom.mp4";
 
 export const productos = [
   {
@@ -173,12 +176,13 @@ export const productos = [
   {
     id: 10,
     nombre: "Integral de Comercio",
-    descripcion: "",
+    descripcion:
+      "Protegé tu negocio ante imprevistos que pueden afectar su continuidad. Nuestro Seguro Integral de Comercio ofrece una cobertura completa diseñada para pequeños, medianos y grandes comercios",
     imagen1: comercioImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1com,
+    imagen3: img2com,
     imagen4: "",
-    video: "",
+    video: videocom,
     video1: "",
     video2: "",
     fichaPDF: "",
@@ -186,7 +190,8 @@ export const productos = [
   {
     id: 11,
     nombre: "Integral de Consorcio",
-    descripcion: "",
+    descripcion:
+      "Protección total para edificios residenciales y comerciales. El Seguro Integral de Consorcio cubre los riesgos más frecuentes que pueden afectar a propietarios, inquilinos y administradores",
     imagen1: consorcioImg,
     imagen2: "",
     imagen3: "",
@@ -199,7 +204,8 @@ export const productos = [
   {
     id: 12,
     nombre: "EcoMovilidad",
-    descripcion: "",
+    descripcion:
+      "Movete con libertad y conciencia ecológica. Nuestro Seguro de Ecomovilidad está diseñado para cubrir bicicletas, monopatines eléctricos, e-scooters y otros medios de transporte sustentables",
     imagen1: ecomovilidadImg,
     imagen2: "",
     imagen3: "",
