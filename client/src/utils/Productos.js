@@ -28,12 +28,17 @@ import imgagro2 from "../assets/images/productos/agro/img2.jpg";
 import imgagro3 from "../assets/images/productos/agro/img3.jpg";
 import imgap1 from "../assets/images/productos/ap/img1ap.jpg";
 import imgap2 from "../assets/images/productos/ap/img2ap.jpg";
+import img1col from "../assets/images/productos/ap/colonia/img1col.jpg";
+import img2col from "../assets/images/productos/ap/colonia/img2col.jpg";
+import fichacol from "../assets/images/productos/ap/colonia/fichacol.pdf";
+import videoapmed from "../assets/images/productos/ap/medicina/videoapmed.mp4";
 
 export const productos = [
   {
     id: 1,
     nombre: "Seguros Agropecuarios",
-    descripcion: "",
+    descripcion:
+      "Los seguros agropecuarios están diseñados para proteger la producción rural frente a riesgos climáticos, sanitarios y otros imprevistos que puedan afectar los cultivos o la actividad ganadera. Esta cobertura brinda respaldo económico al productor agropecuario, garantizando la continuidad de su trabajo ante pérdidas parciales o totales.",
     imagen1: agroImg,
     imagen2: imgagro1,
     imagen3: imgagro2,
@@ -60,25 +65,27 @@ export const productos = [
   {
     id: 3,
     nombre: "Accidentes personales para Colonias de vacaciones",
-    descripcion: "",
+    descripcion:
+      "El seguro de accidentes personales para colonias de vacaciones brinda cobertura médica y asistencia ante lesiones o incidentes que puedan sufrir niños, jóvenes o personal durante actividades recreativas, deportivas o educativas. Es una protección esencial para garantizar tranquilidad tanto a las familias como a los organizadores.",
     imagen1: apColoniaImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1col,
+    imagen3: img2col,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichacol,
   },
   {
     id: 4,
     nombre: "Accidentes Personales Medicina",
-    descripcion: "",
+    descripcion:
+      "El seguro de accidentes personales para medicina está diseñado especialmente para cubrir a médicos, enfermeros, técnicos y demás personal de salud ante posibles accidentes durante el desempeño de sus tareas o en su vida cotidiana. Es una herramienta clave para cuidar a quienes cuidan.",
     imagen1: apMedicinaImg,
     imagen2: "",
     imagen3: "",
     imagen4: "",
-    video: "",
+    video: videoapmed,
     video1: "",
     video2: "",
     fichaPDF: "",

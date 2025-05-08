@@ -11,9 +11,9 @@ export default function ProductosDetail() {
   }
 
   return (
-    <div className="container-fluid py-2 bg-productos">
+    <div className="container-fluid bg-productos">
       <h2
-        className="color-blue fw-bold mb-4 text-center"
+        className="color-blue fw-bold mb-4 text-center mt-2"
         style={{ fontSize: "2rem" }}
       >
         {producto.nombre}
@@ -24,10 +24,10 @@ export default function ProductosDetail() {
       >
         {producto.descripcion}
       </h5>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           {producto.imagen2 && (
-            <div className="col-md-6 mb-3">
+            <div className="col-md-6 mb-4">
               <img
                 src={producto.imagen2}
                 alt={producto.nombre}
@@ -37,7 +37,7 @@ export default function ProductosDetail() {
             </div>
           )}
           {producto.imagen3 && (
-            <div className="col-md-6 mb-3">
+            <div className="col-md-6">
               <img
                 src={producto.imagen3}
                 alt={producto.nombre}
@@ -46,21 +46,11 @@ export default function ProductosDetail() {
               />
             </div>
           )}
-          {producto.imagen4 && (
-            <div className="col-12">
-              <img
-                src={producto.imagen4}
-                alt={producto.nombre}
-                className="img-fluid rounded shadow-sm w-100"
-                style={{ objectFit: "contain" }}
-              />
-            </div>
-          )}
         </div>
       </div>
 
       {producto.fichaPDF && (
-        <div className="mt-4 text-center mb-4">
+        <div className="mt-2 text-center mb-2 ">
           <br />
           <div className="mb-4 mt-2">
             <a
@@ -87,7 +77,7 @@ export default function ProductosDetail() {
         </div>
       )}
       <br />
-      <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mt-3">
+      <div className="d-flex flex-column flex-md-row align-items-center justify-content-around py-4">
         {producto.video && (
           <div className="mb-3 mb-md-0 me-md-3">
             <video
