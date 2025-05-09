@@ -48,6 +48,16 @@ import videocom from "../assets/images/productos/comercio/videocom.mp4";
 import img1con from "../assets/images/productos/consorcio/img1con.jpg";
 import img2con from "../assets/images/productos/consorcio/img2con.jpg";
 import fichacon from "../assets/images/productos/consorcio/fichacon.pdf";
+import img1eco from "../assets/images/productos/ecomovilidad/img1eco.jpg";
+import img2eco from "../assets/images/productos/ecomovilidad/img2eco.jpg";
+import fichaeco from "../assets/images/productos/ecomovilidad/fichaeco.pdf";
+import videoeco from "../assets/images/productos/ecomovilidad/videoeco.mp4";
+import img1embar from "../assets/images/productos/embarcaciones/img1embar.jpg";
+import img2embar from "../assets/images/productos/embarcaciones/img2embar.jpg";
+import fichaembar from "../assets/images/productos/embarcaciones/fichaembar.pdf";
+import img1food from "../assets/images/productos/foodtruck/img1food.jpg";
+import img2food from "../assets/images/productos/foodtruck/img2food.jpg";
+import fichafood from "../assets/images/productos/foodtruck/fichafood.pdf";
 
 export const productos = [
   {
@@ -210,39 +220,41 @@ export const productos = [
     descripcion:
       "Movete con libertad y conciencia ecológica. Nuestro Seguro de Ecomovilidad está diseñado para cubrir bicicletas, monopatines eléctricos, e-scooters y otros medios de transporte sustentables",
     imagen1: ecomovilidadImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1eco,
+    imagen3: img2eco,
     imagen4: "",
-    video: "",
+    video: videoeco,
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichaeco,
   },
   {
     id: 13,
     nombre: "Embarcaciones",
-    descripcion: "",
+    descripcion:
+      "Navegá con total tranquilidad y disfrutá cada salida al agua sabiendo que estás protegido. Nuestro Seguro para Embarcaciones está pensado para lanchas, veleros, motos de agua y yates de uso recreativo, brindando coberturas completas tanto en navegación como en guardería",
     imagen1: embarcacionesImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1embar,
+    imagen3: img2embar,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichaembar,
   },
   {
     id: 14,
     nombre: "FoodTruck",
-    descripcion: "",
+    descripcion:
+      "Tu cocina sobre ruedas merece una protección a la altura. Nuestro Seguro para Food Trucks combina coberturas vehiculares y comerciales en una sola póliza integral, pensada para quienes emprenden sobre ruedas",
     imagen1: foodtruckImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1food,
+    imagen3: img2food,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichafood,
   },
   {
     id: 15,
