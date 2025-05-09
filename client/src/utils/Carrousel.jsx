@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import fuguito from "../assets/images/fuguito.png";
+import fuguito from "../assets/images/FUGOMATULIMA.jpg";
 import FUGOSOLO from "../assets/images/FUGOSOLO.jpg";
 import SOLIRECI from "../assets/images/SOLIRECIBIDA.jpg";
 
