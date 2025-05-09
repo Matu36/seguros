@@ -58,6 +58,22 @@ import fichaembar from "../assets/images/productos/embarcaciones/fichaembar.pdf"
 import img1food from "../assets/images/productos/foodtruck/img1food.jpg";
 import img2food from "../assets/images/productos/foodtruck/img2food.jpg";
 import fichafood from "../assets/images/productos/foodtruck/fichafood.pdf";
+import img1identidad from "../assets/images/productos/identidad/img1identidad.png";
+import img1incendio from "../assets/images/productos/incendio/img1incendio.jpg";
+import img2incendio from "../assets/images/productos/incendio/img2incendio.png";
+import img1tro from "../assets/images/productos/operativo/img1tro.jpg";
+import img2tro from "../assets/images/productos/operativo/img2tro.jpg";
+import videotro from "../assets/images/productos/operativo/videotro.mp4";
+import fichatro from "../assets/images/productos/operativo/fichatro.pdf";
+import img1rc from "../assets/images/productos/rcPro/img1rc.jpg";
+import img2rc from "../assets/images/productos/rcPro/img2rc.jpg";
+import ficharc from "../assets/images/productos/rcPro/ficharc.pdf";
+import img1retiro from "../assets/images/productos/retiro/img1retiro.jpg";
+import img2retiro from "../assets/images/productos/retiro/img2retiro.jpg";
+import ficharetiro from "../assets/images/productos/retiro/ficharetiro.pdf";
+import videoretiro from "../assets/images/productos/retiro/videoretiro.mp4";
+import img1sep from "../assets/images/productos/sepelio/img1sep.jpg";
+import img1vida from "../assets/images/productos/vida/vida1img.jpg";
 
 export const productos = [
   {
@@ -259,10 +275,11 @@ export const productos = [
   {
     id: 15,
     nombre: "Robo de Identidad",
-    descripcion: "",
+    descripcion:
+      "Protegé tu identidad como protegés tus bienes. Con el crecimiento de las operaciones digitales, el robo de identidad es una amenaza real. Nuestro Seguro por Robo de Identidad te brinda respaldo económico y asistencia especializada ante usos indebidos de tus datos personales",
     imagen1: identidadImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: identidadImg,
+    imagen3: img1identidad,
     imagen4: "",
     video: "",
     video1: "",
@@ -272,10 +289,11 @@ export const productos = [
   {
     id: 16,
     nombre: "Seguros de incendio",
-    descripcion: "",
+    descripcion:
+      "Una chispa puede cambiarlo todo. Nuestro Seguro de Incendio está diseñado para proteger tu hogar, comercio o industria ante pérdidas totales o parciales provocadas por incendio, explosiones accidentales, daños por humo, hollín y cortocircuitos. Incluye también gastos por remoción de escombros, intervención de bomberos y asistencia inmediata ante el siniestro. Con opciones personalizables que pueden sumar cobertura por robo y responsabilidad civil, esta póliza te brinda respaldo real y tranquilidad para seguir adelante, incluso frente a lo inesperado.",
     imagen1: incendioImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1incendio,
+    imagen3: img2incendio,
     imagen4: "",
     video: "",
     video1: "",
@@ -285,49 +303,53 @@ export const productos = [
   {
     id: 17,
     nombre: "Todo Riesgo Operativo",
-    descripcion: "",
+    descripcion:
+      "El Seguro Todo Riesgo Operativo está diseñado para proteger la infraestructura, maquinaria, bienes y operaciones de empresas e industrias frente a daños materiales imprevistos, ya sean por incendio, explosiones, robo, rotura de equipos, fenómenos climáticos u otros accidentes que afecten la continuidad del negocio. Ofrece una cobertura amplia, adaptable a distintos rubros y con respaldo técnico especializado para asegurar la rápida recuperación de las actividades ante cualquier siniestro.",
     imagen1: operativoImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img2tro,
+    imagen3: img1tro,
     imagen4: "",
-    video: "",
+    video: videotro,
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: fichatro,
   },
   {
     id: 18,
     nombre: "Responsabilidad Civil Profesional",
-    descripcion: "",
+    descripcion:
+      "El Seguro de Responsabilidad Civil Profesional protege a profesionales frente a reclamos por errores, omisiones o negligencias en el ejercicio de su actividad, que puedan causar perjuicios a terceros. Es una herramienta clave para médicos, abogados, arquitectos, contadores y otros profesionales independientes o en relación de dependencia, brindando respaldo económico, asesoría legal y tranquilidad para ejercer con confianza y seguridad.",
     imagen1: rcProImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1rc,
+    imagen3: img2rc,
     imagen4: "",
     video: "",
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: ficharc,
   },
   {
     id: 19,
     nombre: "Seguros de Retiro",
-    descripcion: "",
+    descripcion:
+      "El Seguro de Retiro es una herramienta de ahorro a largo plazo que te permite planificar tu futuro con tranquilidad, complementando tu jubilación y generando un capital que podés disponer al llegar a la edad pactada. Con aportes periódicos flexibles, beneficios fiscales y distintas opciones de inversión, este seguro te ayuda a construir un respaldo económico sólido, pensado para que disfrutes cada etapa de tu vida con libertad y seguridad.",
     imagen1: retiroImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1retiro,
+    imagen3: img2retiro,
     imagen4: "",
-    video: "",
+    video: videoretiro,
     video1: "",
     video2: "",
-    fichaPDF: "",
+    fichaPDF: ficharetiro,
   },
   {
     id: 20,
     nombre: "Seguros de Sepelio",
-    descripcion: "",
+    descripcion:
+      "El Seguro de Sepelio brinda tranquilidad y respaldo económico en los momentos más difíciles, cubriendo los gastos relacionados con el servicio fúnebre y la organización del sepelio. Ofrece atención inmediata, cobertura nacional, asistencia personalizada y la posibilidad de incluir a todo el grupo familiar en una misma póliza. Con una pequeña cuota mensual, asegurás contención y soluciones prácticas para tus seres queridos, evitando cargas imprevistas cuando más se necesita.",
     imagen1: sepelioImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1sep,
+    imagen3: sepelioImg,
     imagen4: "",
     video: "",
     video1: "",
@@ -337,10 +359,11 @@ export const productos = [
   {
     id: 21,
     nombre: "Seguros de Vida",
-    descripcion: "",
+    descripcion:
+      "El Seguro de Vida ofrece protección económica a tus seres queridos ante tu fallecimiento o invalidez, asegurando estabilidad financiera en momentos difíciles. Con opciones adaptadas a cada etapa de la vida, permite elegir el capital asegurado, incorporar coberturas adicionales y contar con beneficios en vida, como adelantos por enfermedades graves. Es una forma simple y accesible de cuidar lo más importante: tu familia y su bienestar.",
     imagen1: vidaImg,
-    imagen2: "",
-    imagen3: "",
+    imagen2: img1vida,
+    imagen3: vidaImg,
     imagen4: "",
     video: "",
     video1: "",
