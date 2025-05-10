@@ -101,10 +101,25 @@ export default function Nosotros() {
               className="text-dark fs-5"
               style={{ maxWidth: "90%", lineHeight: "1.7" }}
             >
-              <strong>Seguros Pineda</strong>, comenzó en el año 1987 con
-              nuestro papá, Hugo. Huguito hacia las cobranzas de distintos
-              productores y debido a su carácter responsable y simpático fue
-              haciéndose de una cartera que creció debido al boca en boca.
+              <strong>Seguros Pineda</strong> nació en 1987 de la mano de
+              nuestro papá, Huguito Pineda, quien comenzó realizando cobranzas
+              para distintos productores. Gracias a su responsabilidad, simpatía
+              y calidez, fue construyendo una sólida cartera de clientes basada
+              en la confianza y el boca en boca.
+              <br />
+              <br />
+              En aquella época, Huguito conocía personalmente a cada asegurado,
+              compartía charlas, cafés y hasta vínculos con sus familias. Ese
+              trato cercano y humano fue, desde siempre, una marca registrada de
+              nuestra forma de trabajar.
+              <br />
+              <br />
+              Hoy somos sus hijos, Sol y Matías, quienes continuamos con orgullo
+              el camino que él inició. Matías se recibió de Productor y Asesor
+              de Seguros en 2013 y Sol en 2021. Si bien los tiempos cambiaron,
+              mantenemos ese espíritu cálido y familiar en cada vínculo,
+              ofreciendo un asesoramiento profesional, responsable y siempre con
+              buena predisposición.
             </p>
           </div>
         </div>

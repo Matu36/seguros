@@ -39,10 +39,12 @@ export default function Principal() {
               className="text-dark fs-5"
               style={{ maxWidth: "90%", lineHeight: "1.7" }}
             >
-              En <strong>Seguros Pineda</strong>, nos enfocamos en atender las
-              necesidades de los clientes, brindando el asesoramiento y apoyo
-              necesarios para que puedan ofrecer un servicio de calidad a sus
-              clientes y alcanzar el éxito en su carrera profesional.
+              En <strong>Seguros Pineda</strong>, nos destacamos por brindar un
+              asesoramiento claro y personalizado, actuando siempre con
+              responsabilidad, buena predisposición y rapidez. Nos comprometemos
+              a acompañar a nuestros clientes en cada paso, ofreciendo un
+              servicio cercano y eficiente que les permita sentirse respaldado
+              en todo momento.
             </p>
           </div>
         </div>
