@@ -1,6 +1,6 @@
 import React from "react";
 import imgPrincipal from "../assets/images/INICIO-EST.jpeg";
-import nosotros from "../assets/images/nosotros.png";
+import nosotros from "../assets/images/solimatu.jpg";
 import ap from "../assets/images/productos/ap/ap.jpg";
 import casa from "../assets/images/productos/casa/casa.jpg";
 import automotor from "../assets/images/productos/automotor/automotor.jpg";

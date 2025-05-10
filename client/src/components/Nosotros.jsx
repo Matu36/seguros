@@ -1,5 +1,5 @@
 import React from "react";
-import nosotrosImg from "../assets/images/nosotros.png";
+import nosotrosImg from "../assets/images/solimatu.jpg";
 import {
   FaHandshake,
   FaBalanceScale,
