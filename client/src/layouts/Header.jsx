@@ -32,7 +32,7 @@ export default function Header() {
               className="fw-bold text-white"
               style={{ letterSpacing: "1px" }}
             >
-              <FaPhone className="me-1" /> (221) 425-0325
+              <FaPhone className="me-1" /> (221) 5704647 - (221) 5077205
             </span>
           </div>
           <div>

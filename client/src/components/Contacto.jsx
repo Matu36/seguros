@@ -32,7 +32,7 @@ export default function Contacto() {
 
     if (!captchaToken) {
       Swal.fire({
-        html: `<p style="font-weight:600; color:#fff;">Por favor, completá el reCAPTCHA antes de enviar.</p>`,
+        html: `<p style="font-weight:600; color:#fff;">Por favor, completá el CAPTCHA antes de enviar.</p>`,
         background: "#0056b3",
         confirmButtonText: "Ok",
         customClass: {
