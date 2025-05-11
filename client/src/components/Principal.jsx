@@ -43,7 +43,7 @@ export default function Principal() {
               asesoramiento claro y personalizado, actuando siempre con
               responsabilidad, buena predisposición y rapidez. Nos comprometemos
               a acompañar a nuestros clientes en cada paso, ofreciendo un
-              servicio cercano y eficiente que les permita sentirse respaldado
+              servicio cercano y eficiente que les permita sentirse respaldados
               en todo momento.
             </p>
           </div>
