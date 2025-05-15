@@ -143,7 +143,7 @@ export default function Header() {
               <li className="nav-item d-flex align-items-center">
                 <a
                   className="nav-link d-flex align-items-center"
-                  href="https://wa.me/2215077205"
+                  href="https://wa.me/542215077205"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
