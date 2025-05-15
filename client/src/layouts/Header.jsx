@@ -143,12 +143,12 @@ export default function Header() {
               <li className="nav-item d-flex align-items-center">
                 <a
                   className="nav-link d-flex align-items-center"
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/2215077205"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaWhatsapp color="#25D366" size={28} className="me-2" />
-                  (221) 5704647
+                  (221) 5077205
                 </a>
               </li>
             </ul>
