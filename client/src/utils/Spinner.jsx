@@ -21,8 +21,8 @@ function Spinner({ loading }) {
       <div style={{ textAlign: "center" }}>
         <div
           style={{
-            width: "50px",
-            height: "50px",
+            width: "80px",
+            height: "80px",
             border: "5px solid #0b5ed7",
             borderTopColor: "transparent",
             borderRadius: "50%",

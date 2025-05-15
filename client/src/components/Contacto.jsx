@@ -173,6 +173,7 @@ export default function Contacto() {
                 estás buscando.
               </p>
             </div>
+
             {showSpinner && <Spinner loading={true} />}
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
