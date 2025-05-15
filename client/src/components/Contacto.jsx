@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ContactoImg from "../assets/images/CONTACTO.png";
 import { useContacto } from "../hooks/useContacto";
 import Swal from "sweetalert2";
@@ -28,21 +28,7 @@ export default function Contacto() {
 
   const { mutate: crearContacto } = useContacto().contactoMutation;
 
-  //---------------------------------SPINNER ------------------------------------//
-
-  const [showSpinner, setShowSpinner] = useState(true);
-
-  useEffect(() => {
-    setShowSpinner(true);
-
-    const timer = setTimeout(() => {
-      setShowSpinner(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  //---------------------------------FIN SPINNER ------------------------------------//
+  const [showSpinner, setShowSpinner] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
