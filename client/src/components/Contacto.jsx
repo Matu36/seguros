@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ContactoImg from "../assets/images/CONTACTO.png";
 import { useContacto } from "../hooks/useContacto";
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
+import Spinner from "../utils/Spinner";
 
 const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,11 +26,27 @@ export default function Contacto() {
     consulta: "",
   });
 
-  const { mutate: crearContacto, isLoading } = useContacto().contactoMutation;
+  const { mutate: crearContacto } = useContacto().contactoMutation;
+
+  //---------------------------------SPINNER ------------------------------------//
+
+  const [showSpinner, setShowSpinner] = useState(true);
+
+  useEffect(() => {
+    setShowSpinner(true);
+
+    const timer = setTimeout(() => {
+      setShowSpinner(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  //---------------------------------FIN SPINNER ------------------------------------//
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setShowSpinner(true);
     if (!captchaToken) {
       Swal.fire({
         html: `<p style="font-weight:600; color:#fff;">Por favor, completá el CAPTCHA antes de enviar.</p>`,
@@ -46,6 +63,7 @@ export default function Contacto() {
           popup: "animate__animated animate__fadeOutUp",
         },
       });
+      setShowSpinner(false);
       return;
     }
 
@@ -59,6 +77,7 @@ export default function Contacto() {
         { ...formData, captchaToken },
         {
           onSuccess: () => {
+            setShowSpinner(false);
             Swal.fire({
               title: "Mensaje enviado",
               html: `<p style="font-weight:600; color:#fff;">Gracias por contactarnos. Te responderemos pronto.</p>`,
@@ -84,6 +103,7 @@ export default function Contacto() {
             });
           },
           onError: () => {
+            setShowSpinner(false);
             Swal.fire({
               html: `<p style="font-weight:600; color:#fff;">Hubo un problema al enviar el mensaje. Intentalo más tarde.</p>`,
               background: "#0056b3",
@@ -103,6 +123,7 @@ export default function Contacto() {
         }
       );
     } else {
+      setShowSpinner(false);
       Swal.fire({
         html: `<p style="font-weight:600; color:#fff;">Por favor, completá todos los campos correctamente.</p>`,
         background: "#0056b3",
@@ -152,7 +173,7 @@ export default function Contacto() {
                 estás buscando.
               </p>
             </div>
-
+            {showSpinner && <Spinner loading={true} />}
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <input
@@ -214,9 +235,9 @@ export default function Contacto() {
                 <button
                   type="submit"
                   className="btn-custom"
-                  disabled={isLoading}
+                  disabled={showSpinner}
                 >
-                  {isLoading ? "Enviando..." : "ENVIAR MENSAJE"}
+                  ENVIAR MENSAJE
                 </button>
               </div>
             </form>
