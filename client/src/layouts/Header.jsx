@@ -72,7 +72,7 @@ export default function Header() {
             </a>
 
             <a
-              href="https://wa.me/542215704647"
+              href="https://wa.me/542215077205"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -82,7 +82,7 @@ export default function Header() {
               }}
             >
               <FaWhatsapp />
-              <span className="visually-hidden">221 5704647</span>
+              <span className="visually-hidden">221 5077205</span>
             </a>
 
             <a
