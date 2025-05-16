@@ -102,10 +102,10 @@ export default function Nosotros() {
               style={{ maxWidth: "90%", lineHeight: "1.7" }}
             >
               <strong>Seguros Pineda</strong> nació en 1987 de la mano de
-              nuestro papá, Huguito Pineda, quien comenzó realizando cobranzas
-              para distintos productores. Gracias a su responsabilidad, simpatía
-              y calidez, fue construyendo una sólida cartera de clientes basada
-              en la confianza y el boca en boca.
+              nuestro papá, Hugo, quien comenzó realizando cobranzas para
+              distintos productores. Gracias a su responsabilidad, simpatía y
+              calidez, fue construyendo una sólida cartera de clientes basada en
+              la confianza y el boca en boca.
               <br />
               <br />
               En aquella época, Huguito conocía personalmente a cada asegurado,
