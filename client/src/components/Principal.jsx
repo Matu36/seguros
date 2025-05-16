@@ -4,13 +4,19 @@ import nosotros from "../assets/images/solimatu.jpg";
 import ap from "../assets/images/productos/ap/ap.jpg";
 import casa from "../assets/images/productos/casa/casa.jpg";
 import automotor from "../assets/images/productos/automotor/automotor.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import videoTR from "../assets/videos/Todo-Riesgo.mp4";
 import videoControl from "../assets/videos/controlar.mp4";
 import videoCelular from "../assets/videos/celular.mp4";
 
 export default function Principal() {
+  const navigate = useNavigate();
+
+  const buttonCotizacion = () => {
+    navigate("/cotizar");
+  };
+
   return (
     <div className="container-fluid p-0">
       <img
@@ -77,6 +83,11 @@ export default function Principal() {
             />
           </a>
         </div>
+      </div>
+      <div className="cotizarContainerButton">
+        <button className="buttoncotizar" onClick={buttonCotizacion}>
+          Cotiza tu Auto!
+        </button>
       </div>
       <div className="container-fluid mt-4 mt-md-0 mb-2">
         <h4

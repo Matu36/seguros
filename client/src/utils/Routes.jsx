@@ -7,6 +7,7 @@ import Inicio from "../pages/Inicio";
 import ProductoDetalle from "../pages/ProductoDetalle";
 import NovedadesDetalle from "../pages/NovedadesDetalle";
 import TelUtiles from "../pages/TelUtiles";
+import Cotizar from "../pages/Cotizar";
 
 export default function AppRouter() {
   return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/productos" element={<Services />} />
         <Route path="/telUtiles" element={<TelUtiles />} />
+        <Route path="/cotizar" element={<Cotizar />} />
         <Route path="/productos/:id" element={<ProductoDetalle />} />
         <Route path="/novedades/:id" element={<NovedadesDetalle />} />
       </Routes>
