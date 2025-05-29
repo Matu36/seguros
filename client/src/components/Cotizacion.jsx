@@ -12,7 +12,7 @@ export default function Cotizacion() {
     consulta: "",
   });
 
-  //cotizaciones
+  //cotizacion
 
   return (
     <div className="container">
