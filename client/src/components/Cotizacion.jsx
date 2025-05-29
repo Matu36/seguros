@@ -12,6 +12,8 @@ export default function Cotizacion() {
     consulta: "",
   });
 
+  //cotizaciones
+
   return (
     <div className="container">
       <hr />
@@ -91,7 +93,7 @@ export default function Cotizacion() {
                 ></textarea>
               </div>
 
-              <div className="mt-4">
+              <div className="mt-4 d-flex justify-content-center">
                 <button
                   type="submit"
                   className="btn-custom"
