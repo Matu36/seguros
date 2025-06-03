@@ -1,6 +1,7 @@
 const { Router } = require("express");
 
 const { createContacto } = require("../controllers/Contacto");
+const { createResena } = require("../controllers/Resena");
 
 //VAMOS A USAR ESTO CUANDO NECESITEMOS TENER LOS DATOS DE DE SESION DEL USUARIO O CUANDO NECESITEMOS SEGURIDAD.
 
@@ -12,5 +13,6 @@ const { createContacto } = require("../controllers/Contacto");
 const router = Router();
 
 router.post("/contacto/create", createContacto);
+router.post("/resena/create", createResena);
 
 module.exports = router;

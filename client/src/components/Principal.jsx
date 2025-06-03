@@ -9,6 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 import videoTR from "../assets/videos/Todo-Riesgo.mp4";
 import videoControl from "../assets/videos/controlar.mp4";
 import videoCelular from "../assets/videos/celular.mp4";
+import Resena from "./Resena";
 
 export default function Principal() {
   return (
@@ -18,7 +19,6 @@ export default function Principal() {
         alt="imagen principal"
         className="img-fluid w-100"
       />
-
       <div className="row min-vh-90 align-items-center mt-2 mb-5">
         {/* Texto izquierda */}
         <div className="col-md-6 d-flex justify-content-center p-5">
@@ -180,7 +180,6 @@ export default function Principal() {
           Tendencias del sector asegurador
         </h4>
         <h2 className="color-blue text-center fw-bold">Novedades</h2>
-
         <div className="row g-4 justify-content-center">
           {/* Card 1 */}
           <div className="col-lg-4 col-md-6">
@@ -210,7 +209,6 @@ export default function Principal() {
               </div>
             </div>
           </div>
-
           {/* Card 2 */}
           <div className="col-lg-4 col-md-6">
             <div className="card h-100 rounded shadow-sm">
@@ -238,7 +236,6 @@ export default function Principal() {
               </div>
             </div>
           </div>
-
           {/* Card 3 */}
           <div className="col-lg-4 col-md-6">
             <div className="card h-100 rounded shadow-sm">
@@ -289,6 +286,7 @@ export default function Principal() {
           </div>
         </div>
       </div>
+      <Resena />
     </div>
   );
 }
