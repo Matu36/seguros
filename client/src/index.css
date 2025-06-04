@@ -349,19 +349,38 @@ button:focus-visible {
   transition: color 0.2s;
 }
 
-/* Colorea las estrellas seleccionadas hacia la izquierda */
+
 .estrellas-rating input:checked ~ label span,
 .estrellas-rating input:checked + span,
 .estrellas-rating input:checked + span ~ span {
   color: #ffc107;
 }
 
-/* Hover efecto (opcional) */
+
 .estrellas-rating label:hover span,
 .estrellas-rating label:hover ~ label span {
   color: #ffc107;
 }
 
+.boton-opiniones {
+  font-family: 'Merriweather', serif; 
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border: 2px solid #222;
+  color: #222;
+  background-color: transparent;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.boton-opiniones:hover {
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
 
 
 

@@ -82,7 +82,7 @@ export default function Resena() {
   };
 
   return (
-    <div className="container-fluid border rounded shadow-sm bg-light">
+    <div className="container">
       <h2 className="text-center mb-4 mt-4 color-blue fw-bold">
         ¡Nos interesa tu opinión!
       </h2>
@@ -177,38 +177,50 @@ export default function Resena() {
           )}
         </div>
       </form>
-      <div className="mt-4">
-        <div className="row g-3">
-          {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
-            (resena, index) => (
-              <div className="col-12 col-md-4" key={index}>
-                <div
-                  className="border rounded p-2 h-100 shadow-sm bg-white"
-                  style={{ wordWrap: "break-word", overflowWrap: "break-word" }}
-                >
-                  <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
-                    <strong>Email:</strong> {resena.email}
-                  </p>
-                  <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
-                    <strong>Mensaje:</strong> {resena.mensaje}
-                  </p>
-                  <p
-                    style={{ fontSize: "1rem" }}
-                    className="mt-1 mb-0 fw-semibold text-warning"
+      <div className="mt-4 bg-productos py-2">
+        {resenas?.length > 0 && (
+          <h4
+            className=" text-secondary text-center"
+            style={{ letterSpacing: "1px" }}
+          >
+            Lo que nuestros clientes opinan de nosotros
+          </h4>
+        )}
+        <div className="container mt-4">
+          <div className="row g-3 d-flex justify-content-center">
+            {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
+              (resena, index) => (
+                <div className="col-12 col-sm-6 col-md-4" key={index}>
+                  <div
+                    className="border rounded p-2 h-100 shadow-sm bg-white"
+                    style={{
+                      wordWrap: "break-word",
+                      overflowWrap: "break-word",
+                    }}
                   >
-                    Puntuación: {"★".repeat(resena.puntuacion)}
-                    {"☆".repeat(5 - resena.puntuacion)}
-                  </p>
+                    <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
+                      <strong>Email:</strong> {resena.email}
+                    </p>
+                    <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
+                      <strong>Mensaje:</strong> {resena.mensaje}
+                    </p>
+                    <p
+                      style={{ fontSize: "1rem" }}
+                      className="mt-1 mb-0 fw-semibold text-warning"
+                    >
+                      Puntuación: {"★".repeat(resena.puntuacion)}
+                      {"☆".repeat(5 - resena.puntuacion)}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            )
-          )}
+              )
+            )}
+          </div>
         </div>
-
         {resenas?.length > 3 && (
-          <div className="d-flex justify-content-center mt-4 mb-4">
+          <div className="d-flex justify-content-center mt-4 mb-2">
             <button
-              className="btn btn-outline-dark btn-sm"
+              className="btn boton-opiniones "
               onClick={() => setMostrarTodas(!mostrarTodas)}
             >
               {mostrarTodas ? "Ver menos" : "Ver todas las opiniones"}
