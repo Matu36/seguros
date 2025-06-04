@@ -86,10 +86,10 @@ export default function Resena() {
       <div className="mt-2">
         {resenas?.length > 0 ? (
           <h5
-            className="text-uppercase text-secondary text-center py-2"
+            className=" text-secondary text-center py-2"
             style={{ letterSpacing: "1px" }}
           >
-            OPINIONES DE NUESTROS CLIENTES
+            Lo que dicen nuestros clientes
           </h5>
         ) : null}
 
@@ -132,7 +132,7 @@ export default function Resena() {
         )}
       </div>
       <h2 className="text-center mb-4 mt-4 color-blue fw-bold">
-        Nos interesa tu opinión!
+        ¡Nos interesa tu opinión!
       </h2>
 
       <form
