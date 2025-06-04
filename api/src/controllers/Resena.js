@@ -32,6 +32,20 @@ const createResena = async (req, res) => {
   }
 };
 
+const getResenas = async (req, res) => {
+  try {
+    const resenas = await Resena.findAll({
+      order: [["puntuacion", "DESC"]],
+    });
+
+    res.status(200).json(resenas);
+  } catch (error) {
+    console.error("Error al obtener las reseñas:", error);
+    res.status(500).json({ message: "Error al obtener las reseñas" });
+  }
+};
+
 module.exports = {
   createResena,
+  getResenas,
 };
