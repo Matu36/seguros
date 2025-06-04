@@ -82,69 +82,18 @@ export default function Resena() {
   };
 
   return (
-    <div className="container my-3">
-      <div className="mt-2">
-        {resenas?.length > 0 ? (
-          <h5
-            className=" text-secondary text-center py-2"
-            style={{ letterSpacing: "1px" }}
-          >
-            Lo que dicen nuestros clientes
-          </h5>
-        ) : null}
-
-        <div className="row g-3">
-          {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
-            (resena, index) => (
-              <div className="col-12 col-md-4" key={index}>
-                <div
-                  className="border rounded p-2 h-100 shadow-sm bg-white"
-                  style={{ wordWrap: "break-word", overflowWrap: "break-word" }}
-                >
-                  <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
-                    <strong>Email:</strong> {resena.email}
-                  </p>
-                  <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
-                    <strong>Mensaje:</strong> {resena.mensaje}
-                  </p>
-                  <p
-                    style={{ fontSize: "1rem" }}
-                    className="mt-1 mb-0 fw-semibold text-warning"
-                  >
-                    Puntuación: {"★".repeat(resena.puntuacion)}
-                    {"☆".repeat(5 - resena.puntuacion)}
-                  </p>
-                </div>
-              </div>
-            )
-          )}
-        </div>
-
-        {resenas?.length > 3 && (
-          <div className="d-flex justify-content-center mt-3">
-            <button
-              className="btn btn-outline-dark btn-sm"
-              onClick={() => setMostrarTodas(!mostrarTodas)}
-            >
-              {mostrarTodas ? "Ver menos" : "Ver todas las opiniones"}
-            </button>
-          </div>
-        )}
-      </div>
+    <div className="container-fluid border rounded shadow-sm bg-light">
       <h2 className="text-center mb-4 mt-4 color-blue fw-bold">
         ¡Nos interesa tu opinión!
       </h2>
 
-      <form
-        onSubmit={handleSubmit}
-        className="border rounded shadow-sm bg-light p-4"
-      >
-        <div className="row g-3">
+      <form onSubmit={handleSubmit} className="px-4">
+        <div className="row g-3 px-4">
           <div className="col-md-6">
             <input
               type="text"
               name="nombre"
-              placeholder="Tu nombre"
+              placeholder="Nombre"
               value={form.nombre}
               onChange={handleChange}
               className="form-control"
@@ -156,7 +105,7 @@ export default function Resena() {
             <input
               type="email"
               name="email"
-              placeholder="Tu email"
+              placeholder="Email"
               value={form.email}
               onChange={handleChange}
               className="form-control"
@@ -195,7 +144,7 @@ export default function Resena() {
             ))}
           </div>
 
-          <div className="col-12 d-flex justify-content-center mt-4">
+          <div className="col-12 d-flex justify-content-center mt-4 mb-2">
             <button
               type="submit"
               className="btn-custom"
@@ -228,6 +177,45 @@ export default function Resena() {
           )}
         </div>
       </form>
+      <div className="mt-4">
+        <div className="row g-3">
+          {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
+            (resena, index) => (
+              <div className="col-12 col-md-4" key={index}>
+                <div
+                  className="border rounded p-2 h-100 shadow-sm bg-white"
+                  style={{ wordWrap: "break-word", overflowWrap: "break-word" }}
+                >
+                  <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
+                    <strong>Email:</strong> {resena.email}
+                  </p>
+                  <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
+                    <strong>Mensaje:</strong> {resena.mensaje}
+                  </p>
+                  <p
+                    style={{ fontSize: "1rem" }}
+                    className="mt-1 mb-0 fw-semibold text-warning"
+                  >
+                    Puntuación: {"★".repeat(resena.puntuacion)}
+                    {"☆".repeat(5 - resena.puntuacion)}
+                  </p>
+                </div>
+              </div>
+            )
+          )}
+        </div>
+
+        {resenas?.length > 3 && (
+          <div className="d-flex justify-content-center mt-4 mb-4">
+            <button
+              className="btn btn-outline-dark btn-sm"
+              onClick={() => setMostrarTodas(!mostrarTodas)}
+            >
+              {mostrarTodas ? "Ver menos" : "Ver todas las opiniones"}
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
