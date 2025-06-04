@@ -35,16 +35,41 @@ export default function Resena() {
     }
   }, [resenaMutation.isSuccess, resenaMutation.isError, resenaMutation]);
 
+  const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const mensajeRegex = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.,;:!?]*$/;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: name === "puntuacion" ? Number(value) : value,
-    }));
+
+    // Validar campos con regex
+    let isValid = true;
+    switch (name) {
+      case "nombre":
+        isValid = nombreRegex.test(value);
+        break;
+
+      case "mensaje":
+        isValid = mensajeRegex.test(value);
+        break;
+      default:
+        break;
+    }
+
+    if (isValid || name === "puntuacion") {
+      setForm((prev) => ({
+        ...prev,
+        [name]: name === "puntuacion" ? Number(value) : value,
+      }));
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!emailRegex.test(form.email)) {
+      alert("Por favor ingresá un email válido.");
+      return;
+    }
     resenaMutation.mutate(form, {
       onSuccess: () => {
         setForm({ nombre: "", email: "", mensaje: "", puntuacion: 5 });
@@ -99,26 +124,26 @@ export default function Resena() {
             />
           </div>
 
-          <div className="col-md-4">
-            <select
-              name="puntuacion"
-              value={form.puntuacion}
-              onChange={handleChange}
-              className="form-select"
-              required
-            >
-              <option value="" disabled>
-                Seleccioná una puntuación
-              </option>
-              <option value={5}>⭐⭐⭐⭐⭐</option>
-              <option value={4}>⭐⭐⭐⭐</option>
-              <option value={3}>⭐⭐⭐</option>
-              <option value={2}>⭐⭐</option>
-              <option value={1}>⭐</option>
-            </select>
+          <div className="col-md-4 estrellas-rating">
+            {[1, 2, 3, 4, 5].map((num) => (
+              <span
+                key={num}
+                className={
+                  num <= form.puntuacion ? "estrella activa" : "estrella"
+                }
+                onClick={() =>
+                  setForm((prev) => ({
+                    ...prev,
+                    puntuacion: num,
+                  }))
+                }
+              >
+                ★
+              </span>
+            ))}
           </div>
 
-          <div className="col-12 d-flex justify-content-center">
+          <div className="col-12 d-flex justify-content-center mt-4">
             <button
               type="submit"
               className="btn-custom"
