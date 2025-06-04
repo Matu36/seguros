@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useResena } from "../hooks/useResena";
+import { FaArrowDown } from "react-icons/fa";
 
 export default function Resena() {
   const { resenaMutation } = useResena();
@@ -218,12 +219,27 @@ export default function Resena() {
           </div>
         </div>
         {resenas?.length > 3 && (
-          <div className="d-flex justify-content-center mt-4 mb-2">
+          <div className="text-center mt-4 mb-2">
             <button
-              className="btn boton-opiniones "
+              className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm border-0"
+              style={{ transition: "all 0.3s ease", cursor: "pointer" }}
+              onMouseEnter={(e) => {
+                const icon = e.currentTarget.querySelector(".arrow-icon");
+                icon.style.transform = "rotate(180deg)";
+              }}
+              onMouseLeave={(e) => {
+                const icon = e.currentTarget.querySelector(".arrow-icon");
+                icon.style.transform = "rotate(0deg)";
+              }}
               onClick={() => setMostrarTodas(!mostrarTodas)}
             >
-              {mostrarTodas ? "Ver menos" : "Ver todas las opiniones"}
+              {mostrarTodas ? "Ver menos" : "Ver todas"}
+              <FaArrowDown
+                className="arrow-icon"
+                style={{
+                  transition: "transform 0.3s ease",
+                }}
+              />
             </button>
           </div>
         )}
