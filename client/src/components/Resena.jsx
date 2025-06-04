@@ -84,13 +84,16 @@ export default function Resena() {
   return (
     <div className="container my-3">
       <div className="mt-2">
-        <h4
-          className="text-uppercase text-secondary text-center py-2"
-          style={{ letterSpacing: "1px" }}
-        >
-          OPINIONES DE NUESTROS CLIENTES
-        </h4>
-        <div className="row g-3 mt-2">
+        {resenas.length > 0 ? (
+          <h4
+            className="text-uppercase text-secondary text-center py-2"
+            style={{ letterSpacing: "1px" }}
+          >
+            OPINIONES DE NUESTROS CLIENTES
+          </h4>
+        ) : null}
+
+        <div className="row g-3">
           {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
             (resena, index) => (
               <div className="col-md-4" key={index}>
