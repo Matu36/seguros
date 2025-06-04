@@ -3,6 +3,10 @@ import { useResena } from "../hooks/useResena";
 
 export default function Resena() {
   const { resenaMutation } = useResena();
+
+  const { data: resenas } = useResena().resenasQuery;
+  const [mostrarTodas, setMostrarTodas] = useState(false);
+
   const [form, setForm] = useState({
     nombre: "",
     email: "",
@@ -79,7 +83,49 @@ export default function Resena() {
 
   return (
     <div className="container my-3">
-      <h2 className="text-center mb-4 color-blue fw-bold">
+      <div className="mt-2">
+        <h4
+          className="text-uppercase text-secondary text-center py-2"
+          style={{ letterSpacing: "1px" }}
+        >
+          OPINIONES DE NUESTROS CLIENTES
+        </h4>
+        <div className="row g-3 mt-2">
+          {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
+            (resena, index) => (
+              <div className="col-md-4" key={index}>
+                <div className="border rounded p-3 h-100 shadow-sm bg-white">
+                  <p className="mt-2 fw-semibold text-dark">
+                    Email: {resena.email}
+                  </p>
+                  <p className="mt-2 fw-semibold text-dark">
+                    Mensaje: {resena.mensaje}
+                  </p>
+                  <p
+                    style={{ fontSize: "1.2rem" }}
+                    className="mt-2 fw-semibold text-warning"
+                  >
+                    Puntuación: {"★".repeat(resena.puntuacion)}
+                    {"☆".repeat(5 - resena.puntuacion)}
+                  </p>
+                </div>
+              </div>
+            )
+          )}
+        </div>
+
+        {resenas?.length > 3 && (
+          <div className="d-flex justify-content-center mt-4">
+            <button
+              className="btn btn-outline-dark"
+              onClick={() => setMostrarTodas(!mostrarTodas)}
+            >
+              {mostrarTodas ? "Ver menos" : "Ver todas las opiniones"}
+            </button>
+          </div>
+        )}
+      </div>
+      <h2 className="text-center mb-4 mt-4 color-blue fw-bold">
         Nos interesa tu opinión!
       </h2>
 
