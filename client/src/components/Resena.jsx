@@ -84,7 +84,7 @@ export default function Resena() {
   return (
     <div className="container my-3">
       <div className="mt-2">
-        {resenas.length > 0 ? (
+        {resenas?.length > 0 ? (
           <h4
             className="text-uppercase text-secondary text-center py-2"
             style={{ letterSpacing: "1px" }}
