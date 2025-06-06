@@ -83,7 +83,7 @@ export default function Resena() {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h2 className="text-center mb-4 mt-4 color-blue fw-bold">
         ¡Nos interesa tu opinión!
       </h2>

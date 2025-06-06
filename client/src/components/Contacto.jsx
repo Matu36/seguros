@@ -129,7 +129,7 @@ export default function Contacto() {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
         {/* Imagen lado izquierdo */}
         <div className="col-md-6 p-2">
