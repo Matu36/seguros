@@ -14,11 +14,22 @@ import Resena from "./Resena";
 export default function Principal() {
   return (
     <div className="container-fluid p-0">
-      <img
-        src={imgPrincipal}
-        alt="imagen principal"
-        className="img-fluid w-100"
-      />
+      <div className="img-wrapper">
+        <a
+          href="https://www.fedpat.com.ar/seguro-de-retiro/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-novedad"
+        >
+          Asegurá tu Futuro
+        </a>
+
+        <img
+          src={imgPrincipal}
+          alt="imagen principal"
+          className="img-fluid w-100"
+        />
+      </div>
       <div className="row min-vh-90 align-items-center mt-2 mb-5">
         {/* Texto izquierda */}
         <div className="col-md-6 d-flex justify-content-center p-5">

@@ -7,6 +7,7 @@ export default function Resena() {
 
   const { data: resenas } = useResena().resenasQuery;
   const [mostrarTodas, setMostrarTodas] = useState(false);
+  const [mostrarResenas, setMostrarResenas] = useState(false);
 
   const [form, setForm] = useState({
     nombre: "",
@@ -181,67 +182,77 @@ export default function Resena() {
       <div className="mt-4 bg-productos py-2">
         {resenas?.length > 0 && (
           <h4
-            className=" text-secondary text-center"
+            className="text-secondary text-center acordeon-header"
             style={{ letterSpacing: "1px" }}
+            onClick={() => setMostrarResenas(!mostrarResenas)}
           >
             Lo que nuestros clientes opinan de nosotros
+            <FaArrowDown
+              className={`acordeon-icon ${mostrarResenas ? "open" : ""}`}
+            />
           </h4>
         )}
-        <div className="container mt-4">
-          <div className="row g-3 d-flex justify-content-center">
-            {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
-              (resena, index) => (
-                <div className="col-12 col-sm-6 col-md-4" key={index}>
-                  <div
-                    className="border rounded p-2 h-100 shadow-sm bg-white"
-                    style={{
-                      wordWrap: "break-word",
-                      overflowWrap: "break-word",
-                    }}
-                  >
-                    <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
-                      <strong>Email:</strong> {resena.email}
-                    </p>
-                    <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
-                      <strong>Mensaje:</strong> {resena.mensaje}
-                    </p>
-                    <p
-                      style={{ fontSize: "1rem" }}
-                      className="mt-1 mb-0 fw-semibold text-warning"
-                    >
-                      Puntuación: {"★".repeat(resena.puntuacion)}
-                      {"☆".repeat(5 - resena.puntuacion)}
-                    </p>
-                  </div>
+        {mostrarResenas && (
+          <>
+            <div className={`acordeon-body ${mostrarResenas ? "open" : ""}`}>
+              <div className="container mt-4">
+                <div className="row g-3 d-flex justify-content-center">
+                  {(mostrarTodas ? resenas : resenas?.slice(0, 3))?.map(
+                    (resena, index) => (
+                      <div className="col-12 col-sm-6 col-md-4" key={index}>
+                        <div
+                          className="border rounded p-2 h-100 shadow-sm bg-white"
+                          style={{
+                            wordWrap: "break-word",
+                            overflowWrap: "break-word",
+                          }}
+                        >
+                          <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
+                            <strong>Email:</strong> {resena.email}
+                          </p>
+                          <p className="mt-1 mb-1 fw-semibold text-dark fs-6">
+                            <strong>Mensaje:</strong> {resena.mensaje}
+                          </p>
+                          <p
+                            style={{ fontSize: "1rem" }}
+                            className="mt-1 mb-0 fw-semibold text-warning"
+                          >
+                            Puntuación: {"★".repeat(resena.puntuacion)}
+                            {"☆".repeat(5 - resena.puntuacion)}
+                          </p>
+                        </div>
+                      </div>
+                    )
+                  )}
                 </div>
-              )
+              </div>
+            </div>
+            {resenas?.length > 3 && (
+              <div className="text-center mt-4 mb-2">
+                <button
+                  className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm border-0"
+                  style={{ transition: "all 0.3s ease", cursor: "pointer" }}
+                  onMouseEnter={(e) => {
+                    const icon = e.currentTarget.querySelector(".arrow-icon");
+                    icon.style.transform = "rotate(180deg)";
+                  }}
+                  onMouseLeave={(e) => {
+                    const icon = e.currentTarget.querySelector(".arrow-icon");
+                    icon.style.transform = "rotate(0deg)";
+                  }}
+                  onClick={() => setMostrarTodas(!mostrarTodas)}
+                >
+                  {mostrarTodas ? "Ver menos" : "Ver todas"}
+                  <FaArrowDown
+                    className="arrow-icon"
+                    style={{
+                      transition: "transform 0.3s ease",
+                    }}
+                  />
+                </button>
+              </div>
             )}
-          </div>
-        </div>
-        {resenas?.length > 3 && (
-          <div className="text-center mt-4 mb-2">
-            <button
-              className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm border-0"
-              style={{ transition: "all 0.3s ease", cursor: "pointer" }}
-              onMouseEnter={(e) => {
-                const icon = e.currentTarget.querySelector(".arrow-icon");
-                icon.style.transform = "rotate(180deg)";
-              }}
-              onMouseLeave={(e) => {
-                const icon = e.currentTarget.querySelector(".arrow-icon");
-                icon.style.transform = "rotate(0deg)";
-              }}
-              onClick={() => setMostrarTodas(!mostrarTodas)}
-            >
-              {mostrarTodas ? "Ver menos" : "Ver todas"}
-              <FaArrowDown
-                className="arrow-icon"
-                style={{
-                  transition: "transform 0.3s ease",
-                }}
-              />
-            </button>
-          </div>
+          </>
         )}
       </div>
     </div>
