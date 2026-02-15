@@ -420,10 +420,16 @@ button:focus-visible {
 
 
 .btn-novedad:hover {
-  /* transform: translateX(-50%) translateY(2px); */
+
   box-shadow:
     0 3px 0 #00a874,
     0 6px 14px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 770px) {
+  .btn-novedad {
+    display: none;
+  }
 }
 
 .acordeon-header {
@@ -484,19 +490,105 @@ button:focus-visible {
 
 .hero {
   overflow: hidden;
+  position: relative;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
   animation: heroZoom 12s ease-in-out infinite alternate;
+  transform-origin: center;
 }
 
 @keyframes heroZoom {
-  from {
-    transform: scale(1);
+  from { transform: scale(1); }
+  to { transform: scale(1.18); }
+}
+
+@media (max-width: 770px) {
+
+  .hero {
+    padding: 12px 12px;    
+    margin-left: 12px;   
+    margin-right: 12px;  
   }
-  to {
-    transform: scale(1.50);
+
+  .hero-img {
+    height: 80vh;             
+    object-fit: cover;        
+    border-radius: 12px;     
   }
+
+  @keyframes heroZoom {
+    from { transform: scale(1.1); }
+    to { transform: scale(1.35); }
+  }
+
+}
+
+.retiro-mobile {
+  margin: 24px 12px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #f6fffc, #eafff7);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.retiro-mobile-img {
+  width: 100%;
+  max-width: 280px;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.retiro-mobile-content {
+  text-align: center;
+}
+
+.retiro-mobile-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #083b2f;
+  line-height: 1.2;
+}
+
+.retiro-mobile-content h2 span {
+  color: #00c98b;
+}
+
+.retiro-mobile-content p {
+  margin: 12px 0 20px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.retiro-mobile-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #2df5c4, #00c98b);
+  color: #083b2f;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow:
+    0 5px 0 #00a874,
+    0 10px 20px rgba(0,0,0,.2);
+  transition: transform .2s ease;
+}
+
+.retiro-mobile-btn:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 770px) {
+  .mt-mobile-neg {
+    margin-top: -1.5rem;
+  }
+}
+
+.retiro-mobile-title {
+  text-transform: uppercase;
+  font-size: .95rem;
+  color: #00a874;
+  letter-spacing: 1.5px;
 }

@@ -10,6 +10,7 @@ import videoTR from "../assets/videos/Todo-Riesgo.mp4";
 import videoControl from "../assets/videos/controlar.mp4";
 import videoCelular from "../assets/videos/celular.mp4";
 import Resena from "./Resena";
+import RetiroInversionMobile from "./RetiroInversionMobile";
 
 export default function Principal() {
   return (
@@ -28,7 +29,8 @@ export default function Principal() {
           <img src={imgPrincipal} alt="hero" className="hero-img" />
         </div>
       </div>
-      <div className="row min-vh-90 align-items-center mt-2 mb-5">
+      <RetiroInversionMobile />
+      <div className="row min-vh-90 align-items-center mb-5 mt-mobile-neg">
         {/* Texto izquierda */}
         <div className="col-md-6 d-flex justify-content-center p-5">
           <div>
