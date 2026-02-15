@@ -496,14 +496,14 @@ button:focus-visible {
 .hero-img {
   width: 100%;
   height: auto;
-  animation: heroZoom 12s ease-in-out infinite alternate;
-  transform-origin: center;
+  /* animation: heroZoom 12s ease-in-out infinite alternate; */
+  /* transform-origin: center; */
 }
 
-@keyframes heroZoom {
+/* @keyframes heroZoom {
   from { transform: scale(1); }
   to { transform: scale(1.18); }
-}
+} */
 
 @media (max-width: 770px) {
 
@@ -514,7 +514,7 @@ button:focus-visible {
   }
 
   .hero-img {
-    height: 80vh;             
+    height: 70vh;             
     object-fit: cover;        
     border-radius: 12px;     
   }
