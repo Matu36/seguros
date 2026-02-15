@@ -509,8 +509,8 @@ button:focus-visible {
 
   .hero {
     padding: 12px 12px;    
-    margin-left: 12px;   
-    margin-right: 12px;  
+    /* margin-left: 12px;   
+    margin-right: 12px;   */
   }
 
   .hero-img {
