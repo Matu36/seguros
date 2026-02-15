@@ -24,11 +24,9 @@ export default function Principal() {
           Asegurá tu Futuro
         </a>
 
-        <img
-          src={imgPrincipal}
-          alt="imagen principal"
-          className="img-fluid w-100"
-        />
+        <div className="hero">
+          <img src={imgPrincipal} alt="hero" className="hero-img" />
+        </div>
       </div>
       <div className="row min-vh-90 align-items-center mt-2 mb-5">
         {/* Texto izquierda */}

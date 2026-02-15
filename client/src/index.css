@@ -388,20 +388,21 @@ button:focus-visible {
   width: 100%;
 }
 
-/* Botón tipo “novedad” */
+
 .btn-novedad {
   position: absolute;
   top: 26px;
-  left: 12%;
-  transform: translateX(-50%);
-  
+  left: 3%;
+
   background: linear-gradient(180deg, #2df5c4, #00c98b);
   color: #083b2f;
   font-weight: 700;
-  font-size: 18px;
 
-  padding: 14px 28px;
-  border-radius: 14px;
+
+  font-size: clamp(12px, 1.4vw, 18px);
+  padding: clamp(8px, 1.2vw, 14px) clamp(14px, 2vw, 28px);
+  border-radius: clamp(8px, 1vw, 14px);
+
   text-decoration: none;
 
   box-shadow:
@@ -413,9 +414,13 @@ button:focus-visible {
   z-index: 2;
 }
 
-/* efecto hover */
 .btn-novedad:hover {
-  transform: translateX(-50%) translateY(2px);
+  transform: translateY(2px);
+}
+
+
+.btn-novedad:hover {
+  /* transform: translateX(-50%) translateY(2px); */
   box-shadow:
     0 3px 0 #00a874,
     0 6px 14px rgba(0,0,0,0.25);
@@ -434,7 +439,7 @@ button:focus-visible {
   opacity: .8;
 }
 
-/* Flecha */
+
 .acordeon-icon {
   transition: transform .35s ease;
 }
@@ -443,7 +448,7 @@ button:focus-visible {
   transform: rotate(180deg);
 }
 
-/* CONTENIDO ACORDEÓN */
+
 .acordeon-body {
   max-height: 0;
   overflow: hidden;
@@ -454,11 +459,11 @@ button:focus-visible {
 }
 
 .acordeon-body.open {
-  max-height: 2000px; /* suficientemente grande */
+  max-height: 2000px;
   opacity: 1;
 }
 
-/* Botón ver más */
+
 .btn-ver-mas {
   display: inline-flex;
   align-items: center;
@@ -477,3 +482,21 @@ button:focus-visible {
   transform: translateY(-2px);
 }
 
+.hero {
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  animation: heroZoom 12s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.50);
+  }
+}
