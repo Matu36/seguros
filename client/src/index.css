@@ -592,3 +592,19 @@ button:focus-visible {
   color: #00a874;
   letter-spacing: 1.5px;
 }
+
+.img-nosotros {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;    
+}
+
+
+@media (max-width: 770px) {
+  .img-nosotros {
+    margin-left: 12px;
+    margin-right: 12px; 
+  }
+}

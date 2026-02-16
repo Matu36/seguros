@@ -65,12 +65,11 @@ export default function Principal() {
           <img
             src={nosotros}
             alt="Acerca de la compañía"
-            className="w-100 h-100"
-            style={{ objectFit: "cover" }}
+            className="img-nosotros"
           />
           <a
             href="/aboutUs"
-            className="position-absolute bottom-0 end-0 me-4 mb-4 d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm text-decoration-none"
+            className="position-absolute bottom-0 end-0 me-5 mb-4 d-inline-flex align-items-center gap-2 px-4 py-2 bg-white color-blue fw-semibold rounded shadow-sm text-decoration-none"
             style={{ transition: "all 0.3s ease", cursor: "pointer" }}
             onMouseEnter={(e) => {
               const icon = e.currentTarget.querySelector(".arrow-icon");
